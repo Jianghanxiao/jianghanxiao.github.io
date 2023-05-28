@@ -1,5 +1,21 @@
 [
     {
+        "name": "OPDMulti: Openable Part Detection for Multiple Objects",
+        "image": "files/opdmulti.png",
+        "authors": [
+            "Xiaohao Sun*",
+            "Hanxiao Jiang*",
+            "Manolis Savva",
+            "Angel X. Chang"
+        ],
+        "conference": "arXiv",
+        "special": "",
+        "description": "Openable part detection is the task of detecting the openable parts of an object in a single-view image, and predicting corresponding motion parameters. Prior work investigated the unrealistic setting where all input images only contain a single openable object. We generalize this task to scenes with multiple objects each potentially possessing openable parts, and create a corresponding dataset based on real-world scenes. We then address this more challenging scenario with OPDFormer: a part-aware transformer architecture. Our experiments show that the OPDFormer architecture significantly outperforms prior work. The more realistic multiple-object scenarios we investigated remain challenging for all methods, indicating opportunities for future work",
+        "paper": "https://arxiv.org/pdf/2303.14087.pdf",
+        "project": "https://3dlg-hcvc.github.io/OPDMulti/",
+        "code": "https://github.com/3dlg-hcvc/OPDMulti"
+    },
+    {
         "name": "MultiScan: Scalable RGBD scanning for 3D environments with articulated objects",
         "image": "files/multiscan.png",
         "authors": [
