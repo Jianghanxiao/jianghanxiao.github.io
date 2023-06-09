@@ -72,8 +72,8 @@
         <embed height="50" width="100" src="music/yiliaobailiao.mp3">
     </audio>
 </div>
-
-<h1>Hanxiao Jiang(Shawn) | 蒋含啸</h1>
+<img src=files/name.png alt="image" class="img-responsive" style="width: 700px;" />
+<!-- <h1>Hanxiao Jiang(Shawn) | 蒋含啸</h1> -->
 <h5>为天地立心，为生民立命。 为往圣继绝学，为万世开太平。 --- 《横渠语录》 </h5>
 <h5>To ordain conscience for Heaven and Earth. To secure life and fortune for the people. To continue lost teachings for past sages. To establish peace for all future generations.</h5>
         <hr>
@@ -114,12 +114,31 @@ Research Assistant (<a href="https://gruvi.cs.sfu.ca/people/">Gruiv</a> & <a hre
 
 <div class="row paper vertical-center" id="pub_1" data-maintags="vision,conference">
     <div class="col-sm-3 paper-img">
+<a href="#"><img src=files/opdmulti.png alt="image" class="img-responsive" style="width: 300px;" /></a>
+      &nbsp;
+    </div>
+    <div class="col-sm-9">
+<h4 class="red">OPDMulti: Openable Part Detection for Multiple Objects</h4>
+<a href=https://sun-xh.github.io/ target="_blank">Xiaohao Sun*</a>,
+<strong>Hanxiao Jiang*</strong>,
+<a href=https://msavva.github.io/ target="_blank">Manolis Savva</a>,
+<a href=https://angelxuanchang.github.io/ target="_blank">Angel X. Chang</a><br>
+<a href=https://arxiv.org/ target="_blank">arXiv</a>
+<p>Openable part detection is the task of detecting the openable parts of an object in a single-view image, and predicting corresponding motion parameters. Prior work investigated the unrealistic setting where all input images only contain a single openable object. We generalize this task to scenes with multiple objects each potentially possessing openable parts, and create a corresponding dataset based on real-world scenes. We then address this more challenging scenario with OPDFormer: a part-aware transformer architecture. Our experiments show that the OPDFormer architecture significantly outperforms prior work. The more realistic multiple-object scenarios we investigated remain challenging for all methods, indicating opportunities for future work</p>
+<a href=https://arxiv.org/pdf/2303.14087.pdf target="_blank">[Paper]</a>
+<a href=https://3dlg-hcvc.github.io/OPDMulti/ target="_blank">[Project]</a>
+<a href=https://github.com/3dlg-hcvc/OPDMulti target="_blank">[Code]</a>
+    </div>
+  </div>
+<br>
+<div class="row paper vertical-center" id="pub_1" data-maintags="vision,conference">
+    <div class="col-sm-3 paper-img">
 <a href="#"><img src=files/multiscan.png alt="image" class="img-responsive" style="width: 300px;" /></a>
       &nbsp;
     </div>
     <div class="col-sm-9">
 <h4 class="red">MultiScan: Scalable RGBD scanning for 3D environments with articulated objects</h4>
-<a href=https://github.com/SamMaoYS target="_blank">Yongsen Mao</a>,
+<a href=https://sammaoys.github.io/ target="_blank">Yongsen Mao</a>,
 <a href=https://github.com/eamonn-zh target="_blank">Yiming Zhang</a>,
 <strong>Hanxiao Jiang</strong>,
 <a href=https://angelxuanchang.github.io/ target="_blank">Angel X. Chang</a>,
@@ -140,7 +159,7 @@ Research Assistant (<a href="https://gruvi.cs.sfu.ca/people/">Gruiv</a> & <a hre
     <div class="col-sm-9">
 <h4 class="red">OPD: Single-view 3D Openable Part Detection</h4>
 <strong>Hanxiao Jiang</strong>,
-<a href=https://github.com/SamMaoYS target="_blank">Yongsen Mao</a>,
+<a href=https://sammaoys.github.io/ target="_blank">Yongsen Mao</a>,
 <a href=https://msavva.github.io/ target="_blank">Manolis Savva</a>,
 <a href=https://angelxuanchang.github.io/ target="_blank">Angel X. Chang</a><br>
 <a href=https://eccv2022.ecva.net/ target="_blank">ECCV 2022</a>, <i style="color: red">Oral Presentation</i>
@@ -159,7 +178,7 @@ Research Assistant (<a href="https://gruvi.cs.sfu.ca/people/">Gruiv</a> & <a hre
     <div class="col-sm-9">
 <h4 class="red">Articulated 3D Human-Object Interactions from RGB Videos: An Empirical Analysis of Approaches and Challenges</h4>
 <a href=https://www.sanjayharesh.com/ target="_blank">Sanjay Haresh</a>,
-<a href=https://ca.linkedin.com/in/xiaohao-sun-237537195?trk=public_profile_browsemap target="_blank">Xiaohao Sun</a>,
+<a href=https://sun-xh.github.io/ target="_blank">Xiaohao Sun</a>,
 <strong>Hanxiao Jiang</strong>,
 <a href=https://angelxuanchang.github.io/ target="_blank">Angel X. Chang</a>,
 <a href=https://msavva.github.io/ target="_blank">Manolis Savva</a><br>
@@ -216,7 +235,7 @@ Yifu Yuan,
 <a href=https://angelxuanchang.github.io/ target="_blank">Angel X. Chang</a>,
 <a href=https://dritchie.github.io/ target="_blank">Daniel Ritchie</a><br>
 <a href=http://3dv2020.dgcv.nii.ac.jp/ target="_blank">3DV 2020</a>
-<p>We present a system that helps individual expert users rapidly annotate kinematic motions in large 3D shape collections. The organizing concept of our system is motion annotation programs: simple, re-usable procedural rules that generate motion for a given input shape.</p>
+<p>3D models of real-world objects are essential for many applications, including the creation of virtual environments for AI training. To mimic real-world objects in these applications, objects must be annotated with their kinematic mobilities. Annotating kinematic motions is time-consuming, and it is not well-suited to typical crowdsourcing workflows due to the significant domain expertise required. In this paper, we present a system that helps individual expert users rapidly annotate kinematic motions in large 3D shape collections. The organizing concept of our system is motion annotation programs: simple, re-usable procedural rules that generate motion for a given input shape. Our interactive system allows users to author these rules and quickly apply them to collections of functionally-related objects. Using our system, an expert annotated over 1000 joints in under 3 hours. In a user study, participants with no prior experience with our system were able to annotate motions 1.5x faster than with a baseline manual annotation tool.</p>
 <a href=http://visual.cs.brown.edu/projects/articulations-webpage/articulations_3dv2020.pdf target="_blank">[Paper]</a>
 <a href=https://visual.cs.brown.edu/articulations target="_blank">[Project]</a>
     </div>
