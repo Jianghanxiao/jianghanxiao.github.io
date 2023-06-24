@@ -1,5 +1,27 @@
 [
     {
+        "name": "Habitat Synthetic Scenes Dataset (HSSD-200): An Analysis of 3D Scene Scale and Realism Tradeoffs for ObjectGoal Navigation",
+        "image": "files/hssd.png",
+        "authors": [
+            "Mukul Khanna*",
+            "Yongsen Mao*",
+            "Hanxiao Jiang",
+            "Sanjay Haresh",
+            "Brennan Shacklett",
+            "Dhruv Batra",
+            "Alexander Clegg",
+            "Eric Undersander",
+            "Angel X. Chang",
+            "Manolis Savva"
+        ],
+        "conference": "arXiv",
+        "special": "",
+        "description": "We contribute the Habitat Synthetic Scenes Dataset (HSSD-200), a dataset of 211 high-quality 3D scenes, and use it to test navigation agent generalization to realistic 3D environments. Our dataset represents real interiors and contains a diverse set of 18,656 models of real-world objects. We investigate the impact of synthetic 3D scene dataset scale and realism on the task of training embodied agents to find and navigate to objects (ObjectGoal navigation). By comparing to synthetic 3D scene datasets from prior work, we find that scale helps in generalization, but the benefits quickly saturate, making visual fidelity and correlation to real-world scenes more important. Our experiments show that agents trained on our smaller-scale dataset can match or outperform agents trained on much larger datasets. Surprisingly, we observe that agents trained on just 122 scenes from our dataset outperform agents trained on 10,000 scenes from the ProcTHOR-10K dataset in terms of zero-shot generalization in real-world scanned environments.",
+        "paper": "https://arxiv.org/abs/2306.11290",
+        "project": "https://3dlg-hcvc.github.io/hssd/",
+        "code": "https://github.com/3dlg-hcvc/hssd/"
+    },
+    {
         "name": "OPDMulti: Openable Part Detection for Multiple Objects",
         "image": "files/opdmulti.png",
         "authors": [
