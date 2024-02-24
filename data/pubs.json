@@ -1,6 +1,6 @@
 [
     {
-        "name": "Habitat Synthetic Scenes Dataset (HSSD-200): An Analysis of 3D Scene Scale and Realism Tradeoffs for ObjectGoal Navigation",
+        "name": "RoboEXP: Action-Conditioned Scene Graph via Interactive Exploration for Robotic Manipulation",
         "image": "files/roboexp.png",
         "authors": [
             "Hanxiao Jiang",
