@@ -95,18 +95,18 @@ def parsePubs(segments):
                     content.append(f"{author},")
                 else:
                     content.append(f"<a href={segments['person'][author]} target=\"_blank\">{author}</a>,")
-        content.append(f"<a href={segments['conference'][pub['conference']]} target=\"_blank\">{pub['conference']}</a><br>")
+        content.append(f"<a href={segments['conference'][pub['conference']]} target=\"_blank\">{pub['conference']}</a>")
         if pub["special"] == "oral":
             content[-1] += ", <i style=\"color: red\">Oral Presentation</i>"
         elif pub["special"] == "spotlight":
             content[-1] += ", <i style=\"color: red\">Spotlight</i>"
+        content.append("<br>")
         if pub["paper"] != "":
             content.append(f"<a href={pub['paper']} target=\"_blank\">[Paper]</a>")
         if pub["project"] != "":
             content.append(f"<a href={pub['project']} target=\"_blank\">[Project]</a>")
         if pub["code"] != "":
             content.append(f"<a href={pub['code']} target=\"_blank\">[Code]</a>")
-
         info["content"] = content
         all_pubs += generateHTML(segments["_single_pub_template"], info, False)
         all_pubs.append("<br>")
