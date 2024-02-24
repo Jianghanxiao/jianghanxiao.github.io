@@ -95,7 +95,7 @@ def parsePubs(segments):
                     content.append(f"{author},")
                 else:
                     content.append(f"<a href={segments['person'][author]} target=\"_blank\">{author}</a>,")
-        content.append(f"<a href={segments['conference'][pub['conference']]} target=\"_blank\">{pub['conference']}</a>")
+        content.append(f"<a href={segments['conference'][pub['conference']]} target=\"_blank\">{pub['conference']}</a><br>")
         if pub["special"] == "oral":
             content[-1] += ", <i style=\"color: red\">Oral Presentation</i>"
         elif pub["special"] == "spotlight":
