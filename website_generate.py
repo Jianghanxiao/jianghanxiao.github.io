@@ -77,6 +77,7 @@ def parsePubs(segments):
         info = {}
         info["image"] = [f"<a href=\"#\"><img src={pub['image']} alt=\"image\" class=\"img-responsive\" style=\"width: 300px;\" /></a>"]
         content = []
+        content.append(f"<h4 class=\"red\">{pub['name']}</h4>")
         index = 0
         for author in pub['authors']:
             index += 1
@@ -94,13 +95,11 @@ def parsePubs(segments):
                     content.append(f"{author},")
                 else:
                     content.append(f"<a href={segments['person'][author]} target=\"_blank\">{author}</a>,")
-        content.append(f"<h4 class=\"blue\">{pub['name']}</h4>")
         content.append(f"<a href={segments['conference'][pub['conference']]} target=\"_blank\">{pub['conference']}</a>")
         if pub["special"] == "oral":
             content[-1] += ", <i style=\"color: red\">Oral Presentation</i>"
         elif pub["special"] == "spotlight":
             content[-1] += ", <i style=\"color: red\">Spotlight</i>"
-        # content.append(f"<p>{pub['description']}</p>")
         if pub["paper"] != "":
             content.append(f"<a href={pub['paper']} target=\"_blank\">[Paper]</a>")
         if pub["project"] != "":
