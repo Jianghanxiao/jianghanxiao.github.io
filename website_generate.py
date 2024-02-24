@@ -100,7 +100,7 @@ def parsePubs(segments):
             content[-1] += ", <i style=\"color: red\">Oral Presentation</i>"
         elif pub["special"] == "spotlight":
             content[-1] += ", <i style=\"color: red\">Spotlight</i>"
-        content.append(f"<p>{pub['description']}</p>")
+        # content.append(f"<p>{pub['description']}</p>")
         if pub["paper"] != "":
             content.append(f"<a href={pub['paper']} target=\"_blank\">[Paper]</a>")
         if pub["project"] != "":

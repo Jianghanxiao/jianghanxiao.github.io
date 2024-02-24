@@ -143,7 +143,6 @@ Aug 2023 - Present<br />
 <a href=https://shenlong.web.illinois.edu/ target="_blank">Shenlong Wang</a>,
 <a href=https://yunzhuli.github.io/ target="_blank">Yunzhu Li</a><br>
 <a href=https://arxiv.org/ target="_blank">arXiv</a>
-<p>Robots need to explore their surroundings to adapt to and tackle tasks in unknown environments. Prior work has proposed building scene graphs of the environment but typically assumes that the environment is static, omitting regions that require active interactions. This severely limits their ability to handle more complex tasks in household and office environments: before setting up a table, robots must explore drawers and cabinets to locate all utensils and condiments. In this work, we introduce the novel task of interactive scene exploration, wherein robots autonomously explore environments and produce an action-conditioned scene graph (ACSG) that captures the structure of the underlying environment. The ACSG accounts for both low-level information, such as geometry and semantics, and high-level information, such as the action-conditioned relationships between different entities in the scene. To this end, we present the Robotic Exploration (RoboEXP) system, which incorporates the Large Multimodal Model (LMM) and an explicit memory design to enhance our system's capabilities. The robot reasons about what and how to explore an object, accumulating new information through the interaction process and incrementally constructing the ACSG. We apply our system across various real-world settings in a zero-shot manner, demonstrating its effectiveness in exploring and modeling environments it has never seen before. Leveraging the constructed ACSG, we illustrate the effectiveness and efficiency of our RoboEXP system in facilitating a wide range of real-world manipulation tasks involving rigid, articulated objects, nested objects like Matryoshka dolls, and deformable objects like cloth.</p>
 <a href=https://jianghanxiao.github.io/roboexp-web/roboexp.pdf target="_blank">[Paper]</a>
 <a href=https://jianghanxiao.github.io/roboexp-web/ target="_blank">[Project]</a>
 <a href=https://github.com/Jianghanxiao/RoboEXP target="_blank">[Code]</a>
@@ -168,7 +167,6 @@ Aug 2023 - Present<br />
 <a href=https://angelxuanchang.github.io/ target="_blank">Angel X. Chang</a>,
 <a href=https://msavva.github.io/ target="_blank">Manolis Savva</a><br>
 <a href=https://arxiv.org/ target="_blank">arXiv</a>
-<p>We contribute the Habitat Synthetic Scenes Dataset (HSSD-200), a dataset of 211 high-quality 3D scenes, and use it to test navigation agent generalization to realistic 3D environments. Our dataset represents real interiors and contains a diverse set of 18,656 models of real-world objects. We investigate the impact of synthetic 3D scene dataset scale and realism on the task of training embodied agents to find and navigate to objects (ObjectGoal navigation). By comparing to synthetic 3D scene datasets from prior work, we find that scale helps in generalization, but the benefits quickly saturate, making visual fidelity and correlation to real-world scenes more important. Our experiments show that agents trained on our smaller-scale dataset can match or outperform agents trained on much larger datasets. Surprisingly, we observe that agents trained on just 122 scenes from our dataset outperform agents trained on 10,000 scenes from the ProcTHOR-10K dataset in terms of zero-shot generalization in real-world scanned environments.</p>
 <a href=https://arxiv.org/abs/2306.11290 target="_blank">[Paper]</a>
 <a href=https://3dlg-hcvc.github.io/hssd/ target="_blank">[Project]</a>
 <a href=https://github.com/3dlg-hcvc/hssd/ target="_blank">[Code]</a>
@@ -187,7 +185,6 @@ Aug 2023 - Present<br />
 <a href=https://msavva.github.io/ target="_blank">Manolis Savva</a>,
 <a href=https://angelxuanchang.github.io/ target="_blank">Angel X. Chang</a><br>
 <a href=https://3dvconf.github.io/2024/ target="_blank">3DV 2024</a>, <i style="color: red">Oral Presentation</i>
-<p>Openable part detection is the task of detecting the openable parts of an object in a single-view image, and predicting corresponding motion parameters. Prior work investigated the unrealistic setting where all input images only contain a single openable object. We generalize this task to scenes with multiple objects each potentially possessing openable parts, and create a corresponding dataset based on real-world scenes. We then address this more challenging scenario with OPDFormer: a part-aware transformer architecture. Our experiments show that the OPDFormer architecture significantly outperforms prior work. The more realistic multiple-object scenarios we investigated remain challenging for all methods, indicating opportunities for future work</p>
 <a href=https://arxiv.org/pdf/2303.14087.pdf target="_blank">[Paper]</a>
 <a href=https://3dlg-hcvc.github.io/OPDMulti/ target="_blank">[Project]</a>
 <a href=https://github.com/3dlg-hcvc/OPDMulti target="_blank">[Code]</a>
@@ -207,7 +204,6 @@ Aug 2023 - Present<br />
 <a href=https://angelxuanchang.github.io/ target="_blank">Angel X. Chang</a>,
 <a href=https://msavva.github.io/ target="_blank">Manolis Savva</a><br>
 <a href=https://nips.cc/ target="_blank">NeurIPS 2022</a>
-<p>We introduce MultiScan, a scalable RGBD dataset construction pipeline leveraging commodity mobile devices to scan indoor scenes with articulated objects and web-based semantic annotation interfaces to efficiently annotate object and part semantics and part mobility parameters. We use this pipeline to collect 230 scans of 108 indoor scenes containing 9458 objects and 4331 parts. The resulting MultiScan dataset provides RGBD streams with per-frame camera poses, textured 3D surface meshes, richly annotated part-level and object-level semantic labels, and part mobility parameters. We validate our dataset on instance segmentation and part mobility estimation tasks and benchmark methods for these tasks from prior work. Our experiments show that part segmentation and mobility estimation in real 3D scenes remain challenging despite recent progress in 3D object segmentation.</p>
 <a href=https://openreview.net/pdf?id=YxUdazpgweG target="_blank">[Paper]</a>
 <a href=https://3dlg-hcvc.github.io/multiscan/#/ target="_blank">[Project]</a>
 <a href=https://github.com/smartscenes/multiscan target="_blank">[Code]</a>
@@ -226,7 +222,6 @@ Aug 2023 - Present<br />
 <a href=https://msavva.github.io/ target="_blank">Manolis Savva</a>,
 <a href=https://angelxuanchang.github.io/ target="_blank">Angel X. Chang</a><br>
 <a href=https://eccv2022.ecva.net/ target="_blank">ECCV 2022</a>, <i style="color: red">Oral Presentation</i>
-<p>We address the task of predicting what parts of an object can open and how they move when they do so. The input is a single image of an object, and as output we detect what parts of the object can open, and the motion parameters describing the articulation of each openable part. To tackle this task, we create two datasets of 3D objects: OPDSynth based on existing synthetic objects, and OPDReal based on RGBD reconstructions of real objects. We then design OPDRCNN, a neural architecture that detects openable parts and predicts their motion parameters. Our experiments show that this is a challenging task especially when considering generalization across object categories, and the limited amount of information in a single image. Our architecture outperforms baselines and prior work especially for RGB image inputs.</p>
 <a href=https://arxiv.org/pdf/2203.16421.pdf target="_blank">[Paper]</a>
 <a href=https://3dlg-hcvc.github.io/OPD/ target="_blank">[Project]</a>
 <a href=https://github.com/3dlg-hcvc/OPD target="_blank">[Code]</a>
@@ -246,7 +241,6 @@ Aug 2023 - Present<br />
 <a href=https://angelxuanchang.github.io/ target="_blank">Angel X. Chang</a>,
 <a href=https://msavva.github.io/ target="_blank">Manolis Savva</a><br>
 <a href=https://3dvconf.github.io/2022/ target="_blank">3DV 2022</a>
-<p>Human-object interactions with articulated objects are common in everyday life. Despite much progress in single-view 3D reconstruction, it is still challenging to infer an articulated 3D object model from an RGB video showing a person manipulating the object. We canonicalize the task of articulated 3D human-object interaction reconstruction from RGB video, and carry out a systematic benchmark of four methods for this task: 3D plane estimation, 3D cuboid estimation, CAD model fitting, and free-form mesh fitting. Our experiments show that all methods struggle to obtain high accuracy results even when provided ground truth information about the observed objects. We identify key factors which make the task challenging and suggest directions for future work on this challenging 3D computer vision task.</p>
 <a href=https://arxiv.org/abs/2209.05612 target="_blank">[Paper]</a>
 <a href=https://3dlg-hcvc.github.io/3dhoi/ target="_blank">[Project]</a>
 <a href=https://github.com/3dlg-hcvc/3dhoi target="_blank">[Code]</a>
@@ -274,7 +268,6 @@ Yifu Yuan,
 <a href=http://geometry.stanford.edu/member/guibas/ target="_blank">Leonidas J. Guibas</a>,
 <a href=http://cseweb.ucsd.edu/~haosu/ target="_blank">Hao Su</a><br>
 <a href=http://cvpr2020.thecvf.com/ target="_blank">CVPR 2020</a>, <i style="color: red">Oral Presentation</i>
-<p>Building home assistant robots has long been a pursuit for vision and robotics researchers. To achieve this task, a simulated environment with physically realistic simulation, sufficient articulated objects, and transferability to the real robot is indispensable. Existing environments achieve these requirements for robotics simulation with different levels of simplification and focus. We take one step further in constructing an environment that supports household tasks for training robot learning algorithm. Our work, SAPIEN, is a realistic and physics-rich simulated environment that hosts a large-scale set for articulated objects. Our SAPIEN enables various robotic vision and interaction tasks that require detailed part-level understanding.We benchmark state-of-the-art vision algorithms for part detection and motion attribute recognition as well as demonstrate robotic interaction tasks using heuristic approaches and reinforcement learning algorithms. We hope that our SAPIEN can open a lot of research directions yet to be explored, including learning cognition through interaction, part motion discovery, and construction of robotics-ready simulated game environment.</p>
 <a href=https://arxiv.org/abs/2003.08515 target="_blank">[Paper]</a>
 <a href=http://sapien.ucsd.edu/publication target="_blank">[Project]</a>
     </div>
@@ -298,7 +291,6 @@ Yifu Yuan,
 <a href=https://angelxuanchang.github.io/ target="_blank">Angel X. Chang</a>,
 <a href=https://dritchie.github.io/ target="_blank">Daniel Ritchie</a><br>
 <a href=http://3dv2020.dgcv.nii.ac.jp/ target="_blank">3DV 2020</a>
-<p>3D models of real-world objects are essential for many applications, including the creation of virtual environments for AI training. To mimic real-world objects in these applications, objects must be annotated with their kinematic mobilities. Annotating kinematic motions is time-consuming, and it is not well-suited to typical crowdsourcing workflows due to the significant domain expertise required. In this paper, we present a system that helps individual expert users rapidly annotate kinematic motions in large 3D shape collections. The organizing concept of our system is motion annotation programs: simple, re-usable procedural rules that generate motion for a given input shape. Our interactive system allows users to author these rules and quickly apply them to collections of functionally-related objects. Using our system, an expert annotated over 1000 joints in under 3 hours. In a user study, participants with no prior experience with our system were able to annotate motions 1.5x faster than with a baseline manual annotation tool.</p>
 <a href=http://visual.cs.brown.edu/projects/articulations-webpage/articulations_3dv2020.pdf target="_blank">[Paper]</a>
 <a href=https://visual.cs.brown.edu/articulations target="_blank">[Project]</a>
     </div>
@@ -315,7 +307,6 @@ Yifu Yuan,
 <a href=https://www2.cs.sfu.ca/~funt/ target="_blank">Brian Funt</a>,
 <strong>Hanxiao Jiang</strong><br>
 <a href=https://www.imaging.org/site/IST/Conferences/Color_and_Imaging/CIC27__2019_/IST/Conferences/CIC/CIC2019/CIC27_Home.aspx?hkey=0fb3eb64-061f-4609-8d3c-7b8e6c0c4b90 target="_blank">CIC 2019</a>, <i style="color: red">Oral Presentation</i>
-<p>A new image test set of synthetically generated, full-spectrum images with pixelwise ground truth has been developed to aid in the evaluation of illumination estimation methods for colour constancy. The performance of 9 illumination methods is reported for this dataset along and compared to the optimal single-illuminant estimate. None of the methods specifically designed to handle multi-illuminant scenes is found to perform any better than the optimal single-illuminant case based on completely uniform illumination.</p>
 <a href=https://www2.cs.sfu.ca/~funt/Hao+Funt_MIST_CIC27_2019.pdf target="_blank">[Paper]</a>
     </div>
   </div>
