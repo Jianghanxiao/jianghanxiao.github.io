@@ -115,7 +115,7 @@ def parsePubs(segments):
     return generateHTML(segments["_pubs_template"], pubs, False)
 
 def generateIndexHTML(segments):
-    segments["body_1"] = parseNews(segments["_news"][:6], True)
+    segments["body_1"] = parseNews(segments["_news"][:7], True)
     segments["body_2"] = parsePubs(segments)
     generateHTML(segments["_template"], segments, True, "./index.html")
 
