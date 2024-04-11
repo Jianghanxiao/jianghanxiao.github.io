@@ -18,7 +18,7 @@
         "paper": "https://jianghanxiao.github.io/roboexp-web/roboexp.pdf",
         "project": "https://jianghanxiao.github.io/roboexp-web/",
         "code": "https://github.com/Jianghanxiao/RoboEXP",
-        "extra": "<i style=\"color: red\">Spotlight Presentation</i> at <b>ICRA 2024</b> Workshop on Vision-Language Models for Manipulation <a href=https://vlmnm-workshop.github.io/ target=\"_blank\">[Link]</a>"
+        "extra": "<b><i style=\"color: red\">Spotlight Presentation</i></b> at <b>ICRA 2024</b> Workshop on Vision-Language Models for Manipulation <a href=https://vlmnm-workshop.github.io/ target=\"_blank\">[Link]</a>"
     },
     {
         "name": "Habitat Synthetic Scenes Dataset (HSSD-200): An Analysis of 3D Scene Scale and Realism Tradeoffs for ObjectGoal Navigation",
