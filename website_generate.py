@@ -107,6 +107,9 @@ def parsePubs(segments):
             content.append(f"<a href={pub['project']} target=\"_blank\">[Project]</a>")
         if pub["code"] != "":
             content.append(f"<a href={pub['code']} target=\"_blank\">[Code]</a>")
+        if "extra" in pub:
+            content.append("<br>")
+            content.append(pub["extra"])
         info["content"] = content
         all_pubs += generateHTML(segments["_single_pub_template"], info, False)
         all_pubs.append("<br>")
