@@ -1,5 +1,24 @@
 [
     {
+        "name": "PhysGen3D: Crafting a Miniature Interactive World from a Single Image",
+        "image": "files/s2o.png",
+        "authors": [
+            "Boyuan Chen",
+            "Hanxiao Jiang",
+            "Shaowei Liu",
+            "Saurabh Gupta",
+            "Yunzhu Li",
+            "Hao Zhao",
+            "Shenlong Wang"
+        ],
+        "conference": "CVPR 2025",
+        "special": "",
+        "description": "",
+        "paper": "files/physgen3d.pdf",
+        "project": "https://by-luckk.github.io/PhysGen3D/",
+        "code": "https://github.com/by-luckk/PhysGen3D"
+    },
+    {
         "name": "S2O: Static to Openable Enhancement for Articulated 3D Objects",
         "image": "files/s2o.png",
         "authors": [
