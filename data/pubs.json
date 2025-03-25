@@ -1,7 +1,25 @@
 [
     {
+        "name": "PhysTwin: Physics-Informed Reconstruction and Simulation of Deformable Objects from Videos",
+        "image": "files/phystwin.png",
+        "authors": [
+            "Hanxiao Jiang",
+            "Hao-Yu Hsu",
+            "Kaifeng Zhang",
+            "Hsin-Ni Yu",
+            "Shenlong Wang",
+            "Yunzhu Li"
+        ],
+        "conference": "arXiv",
+        "special": "",
+        "description": "",
+        "paper": "https://jianghanxiao.github.io/phystwin-web/phystwin.pdf",
+        "project": "https://jianghanxiao.github.io/phystwin-web/",
+        "code": "https://github.com/Jianghanxiao/PhysTwin"
+    },
+    {
         "name": "PhysGen3D: Crafting a Miniature Interactive World from a Single Image",
-        "image": "files/s2o.png",
+        "image": "files/physgen3d.png",
         "authors": [
             "Boyuan Chen",
             "Hanxiao Jiang",
