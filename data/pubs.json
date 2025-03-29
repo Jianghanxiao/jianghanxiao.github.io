@@ -32,7 +32,7 @@
         "conference": "CVPR 2025",
         "special": "",
         "description": "",
-        "paper": "files/physgen3d.pdf",
+        "paper": "https://arxiv.org/abs/2503.20746",
         "project": "https://by-luckk.github.io/PhysGen3D/",
         "code": "https://github.com/by-luckk/PhysGen3D"
     },
