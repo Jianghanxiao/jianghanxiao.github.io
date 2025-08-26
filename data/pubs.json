@@ -1,7 +1,7 @@
 [
     {
         "name": "PhysTwin: Physics-Informed Reconstruction and Simulation of Deformable Objects from Videos",
-        "image": "files/phystwin.jpg",
+        "image": "files/phystwin.gif",
         "authors": [
             "Hanxiao Jiang",
             "Hao-Yu Hsu",
@@ -19,7 +19,7 @@
     },
     {
         "name": "PhysGen3D: Crafting a Miniature Interactive World from a Single Image",
-        "image": "files/physgen3d.jpg",
+        "image": "files/physgen3d.gif",
         "authors": [
             "Boyuan Chen",
             "Hanxiao Jiang",
@@ -55,7 +55,7 @@
     },
     {
         "name": "RoboEXP: Action-Conditioned Scene Graph via Interactive Exploration for Robotic Manipulation",
-        "image": "files/roboexp.jpg",
+        "image": "files/roboexp.gif",
         "authors": [
             "Hanxiao Jiang",
             "Binghao Huang",
