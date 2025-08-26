@@ -38,7 +38,7 @@
     },
     {
         "name": "S2O: Static to Openable Enhancement for Articulated 3D Objects",
-        "image": "files/s2o.jpg",
+        "image": "files/s2o.gif",
         "authors": [
             "Denys Iliash",
             "Hanxiao Jiang",
@@ -76,7 +76,7 @@
     },
     {
         "name": "Habitat Synthetic Scenes Dataset (HSSD-200): An Analysis of 3D Scene Scale and Realism Tradeoffs for ObjectGoal Navigation",
-        "image": "files/hssd.jpg",
+        "image": "files/hssd.gif",
         "authors": [
             "Mukul Khanna*",
             "Yongsen Mao*",
