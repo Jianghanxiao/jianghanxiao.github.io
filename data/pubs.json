@@ -147,7 +147,7 @@
     },
     {
         "name": "Articulated 3D Human-Object Interactions from RGB Videos: An Empirical Analysis of Approaches and Challenges",
-        "image": "files/articulated-3DHOI.jpg",
+        "image": "files/articulated-3DHOI.gif",
         "authors": [
             "Sanjay Haresh",
             "Xiaohao Sun",
@@ -189,7 +189,7 @@
     },
     {
         "name": "Motion Annotation Programs: A Scalable Approach to Annotating Kinematic Articulations in Large 3D Shape Collections",
-        "image": "files/MAP.jpg",
+        "image": "files/MAP.gif",
         "authors": [
             "Xianghao Xu",
             "David Charatan",
