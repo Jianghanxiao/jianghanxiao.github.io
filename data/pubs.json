@@ -114,7 +114,7 @@
     },
     {
         "name": "MultiScan: Scalable RGBD scanning for 3D environments with articulated objects",
-        "image": "files/multiscan.jpg",
+        "image": "files/multiscan.gif",
         "authors": [
             "Yongsen Mao",
             "Yiming Zhang",
@@ -131,7 +131,7 @@
     },
     {
         "name": "OPD: Single-view 3D Openable Part Detection",
-        "image": "files/opd.jpg",
+        "image": "files/opd.gif",
         "authors": [
             "Hanxiao Jiang",
             "Yongsen Mao",
