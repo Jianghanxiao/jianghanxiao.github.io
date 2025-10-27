@@ -15,7 +15,8 @@
         "description": "",
         "paper": "https://jianghanxiao.github.io/phystwin-web/phystwin.pdf",
         "project": "https://jianghanxiao.github.io/phystwin-web/",
-        "code": "https://github.com/Jianghanxiao/PhysTwin"
+        "code": "https://github.com/Jianghanxiao/PhysTwin",
+        "extra": "<b><i style=\"color: red\">The work I love most — code maintained for the long term.</i></b></a>"
     },
     {
         "name": "PhysGen3D: Crafting a Miniature Interactive World from a Single Image",
