@@ -16,6 +16,7 @@
         "paper": "https://jianghanxiao.github.io/phystwin-web/phystwin.pdf",
         "project": "https://jianghanxiao.github.io/phystwin-web/",
         "code": "https://github.com/Jianghanxiao/PhysTwin",
+        "github_star": "jianghanxiao/PhysTwin",
         "extra": "<b><i style=\"color: red\">The work I love most — code maintained for the long term.</i></b></a>"
     },
     {
@@ -35,7 +36,8 @@
         "description": "",
         "paper": "https://arxiv.org/abs/2503.20746",
         "project": "https://by-luckk.github.io/PhysGen3D/",
-        "code": "https://github.com/by-luckk/PhysGen3D"
+        "code": "https://github.com/by-luckk/PhysGen3D",
+        "github_star": "by-luckk/PhysGen3D"
     },
     {
         "name": "S2O: Static to Openable Enhancement for Articulated 3D Objects",
@@ -52,7 +54,8 @@
         "description": "Despite much progress in large 3D datasets there are currently few interactive 3D object datasets, and their scale is limited due to the manual effort required in their construction. We introduce the static to openable (S2O) task which creates interactive articulated 3D objects from static counterparts through openable part detection, motion prediction, and interior geometry completion. We formulate a unified framework to tackle this task, and curate a challenging dataset of openable 3D objects that serves as a test bed for systematic evaluation. Our experiments benchmark methods from prior work and simple yet effective heuristics for the S2O task. We find that turning static 3D objects into interactively openable counterparts is possible but that all methods struggle to generalize to realistic settings of the task, and we highlight promising future work directions.",
         "paper": "https://arxiv.org/abs/2409.18896",
         "project": "https://3dlg-hcvc.github.io/s2o/",
-        "code": "https://github.com/3dlg-hcvc/s2o"
+        "code": "https://github.com/3dlg-hcvc/s2o",
+        "github_star": "3dlg-hcvc/s2o"
     },
     {
         "name": "RoboEXP: Action-Conditioned Scene Graph via Interactive Exploration for Robotic Manipulation",
@@ -73,6 +76,7 @@
         "paper": "https://jianghanxiao.github.io/roboexp-web/roboexp.pdf",
         "project": "https://jianghanxiao.github.io/roboexp-web/",
         "code": "https://github.com/Jianghanxiao/RoboEXP",
+        "github_star": "Jianghanxiao/RoboEXP",
         "extra": "<b><i style=\"color: red\">Best Paper Nomination</i></b> at <b>ICRA 2024</b> Workshop on Vision-Language Models for Navigation and Manipulation <a href=https://vlmnm-workshop.github.io/ target=\"_blank\">[Link]</a>"
     },
     {
@@ -95,7 +99,8 @@
         "description": "We contribute the Habitat Synthetic Scenes Dataset (HSSD-200), a dataset of 211 high-quality 3D scenes, and use it to test navigation agent generalization to realistic 3D environments. Our dataset represents real interiors and contains a diverse set of 18,656 models of real-world objects. We investigate the impact of synthetic 3D scene dataset scale and realism on the task of training embodied agents to find and navigate to objects (ObjectGoal navigation). By comparing to synthetic 3D scene datasets from prior work, we find that scale helps in generalization, but the benefits quickly saturate, making visual fidelity and correlation to real-world scenes more important. Our experiments show that agents trained on our smaller-scale dataset can match or outperform agents trained on much larger datasets. Surprisingly, we observe that agents trained on just 122 scenes from our dataset outperform agents trained on 10,000 scenes from the ProcTHOR-10K dataset in terms of zero-shot generalization in real-world scanned environments.",
         "paper": "https://arxiv.org/abs/2306.11290",
         "project": "https://3dlg-hcvc.github.io/hssd/",
-        "code": "https://github.com/3dlg-hcvc/hssd/"
+        "code": "https://github.com/3dlg-hcvc/hssd/",
+        "github_star": "3dlg-hcvc/hssd"
     },
     {
         "name": "OPDMulti: Openable Part Detection for Multiple Objects",
@@ -111,7 +116,8 @@
         "description": "Openable part detection is the task of detecting the openable parts of an object in a single-view image, and predicting corresponding motion parameters. Prior work investigated the unrealistic setting where all input images only contain a single openable object. We generalize this task to scenes with multiple objects each potentially possessing openable parts, and create a corresponding dataset based on real-world scenes. We then address this more challenging scenario with OPDFormer: a part-aware transformer architecture. Our experiments show that the OPDFormer architecture significantly outperforms prior work. The more realistic multiple-object scenarios we investigated remain challenging for all methods, indicating opportunities for future work",
         "paper": "https://arxiv.org/pdf/2303.14087.pdf",
         "project": "https://3dlg-hcvc.github.io/OPDMulti/",
-        "code": "https://github.com/3dlg-hcvc/OPDMulti"
+        "code": "https://github.com/3dlg-hcvc/OPDMulti",
+        "github_star": "3dlg-hcvc/OPDMulti"
     },
     {
         "name": "MultiScan: Scalable RGBD scanning for 3D environments with articulated objects",
@@ -128,7 +134,8 @@
         "description": "We introduce MultiScan, a scalable RGBD dataset construction pipeline leveraging commodity mobile devices to scan indoor scenes with articulated objects and web-based semantic annotation interfaces to efficiently annotate object and part semantics and part mobility parameters. We use this pipeline to collect 230 scans of 108 indoor scenes containing 9458 objects and 4331 parts. The resulting MultiScan dataset provides RGBD streams with per-frame camera poses, textured 3D surface meshes, richly annotated part-level and object-level semantic labels, and part mobility parameters. We validate our dataset on instance segmentation and part mobility estimation tasks and benchmark methods for these tasks from prior work. Our experiments show that part segmentation and mobility estimation in real 3D scenes remain challenging despite recent progress in 3D object segmentation.",
         "paper": "https://openreview.net/pdf?id=YxUdazpgweG",
         "project": "https://3dlg-hcvc.github.io/multiscan/#/",
-        "code": "https://github.com/smartscenes/multiscan"
+        "code": "https://github.com/smartscenes/multiscan",
+        "github_star": "smartscenes/multiscan"
     },
     {
         "name": "OPD: Single-view 3D Openable Part Detection",
@@ -144,7 +151,8 @@
         "description": "We address the task of predicting what parts of an object can open and how they move when they do so. The input is a single image of an object, and as output we detect what parts of the object can open, and the motion parameters describing the articulation of each openable part. To tackle this task, we create two datasets of 3D objects: OPDSynth based on existing synthetic objects, and OPDReal based on RGBD reconstructions of real objects. We then design OPDRCNN, a neural architecture that detects openable parts and predicts their motion parameters. Our experiments show that this is a challenging task especially when considering generalization across object categories, and the limited amount of information in a single image. Our architecture outperforms baselines and prior work especially for RGB image inputs.",
         "paper": "https://arxiv.org/pdf/2203.16421.pdf",
         "project": "https://3dlg-hcvc.github.io/OPD/",
-        "code": "https://github.com/3dlg-hcvc/OPD"
+        "code": "https://github.com/3dlg-hcvc/OPD",
+        "github_star": "3dlg-hcvc/OPD"
     },
     {
         "name": "Articulated 3D Human-Object Interactions from RGB Videos: An Empirical Analysis of Approaches and Challenges",
@@ -161,7 +169,8 @@
         "description": "Human-object interactions with articulated objects are common in everyday life. Despite much progress in single-view 3D reconstruction, it is still challenging to infer an articulated 3D object model from an RGB video showing a person manipulating the object. We canonicalize the task of articulated 3D human-object interaction reconstruction from RGB video, and carry out a systematic benchmark of four methods for this task: 3D plane estimation, 3D cuboid estimation, CAD model fitting, and free-form mesh fitting. Our experiments show that all methods struggle to obtain high accuracy results even when provided ground truth information about the observed objects. We identify key factors which make the task challenging and suggest directions for future work on this challenging 3D computer vision task.",
         "paper": "https://arxiv.org/abs/2209.05612",
         "project": "https://3dlg-hcvc.github.io/3dhoi/",
-        "code": "https://github.com/3dlg-hcvc/3dhoi"
+        "code": "https://github.com/3dlg-hcvc/3dhoi",
+        "github_star": "3dlg-hcvc/3dhoi"
     },
     {
         "name": "SAPIEN: A SimulAted Part-based Interactive ENvironment",
