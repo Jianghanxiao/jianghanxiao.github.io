@@ -73,7 +73,7 @@
             "Manolis Savva",
             "Angel X. Chang"
         ],
-        "conference": "arXiv",
+        "conference": "WACV 2026",
         "special": "",
         "description": "Despite much progress in large 3D datasets there are currently few interactive 3D object datasets, and their scale is limited due to the manual effort required in their construction. We introduce the static to openable (S2O) task which creates interactive articulated 3D objects from static counterparts through openable part detection, motion prediction, and interior geometry completion. We formulate a unified framework to tackle this task, and curate a challenging dataset of openable 3D objects that serves as a test bed for systematic evaluation. Our experiments benchmark methods from prior work and simple yet effective heuristics for the S2O task. We find that turning static 3D objects into interactively openable counterparts is possible but that all methods struggle to generalize to realistic settings of the task, and we highlight promising future work directions.",
         "paper": "https://arxiv.org/abs/2409.18896",
