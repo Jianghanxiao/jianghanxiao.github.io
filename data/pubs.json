@@ -1,5 +1,29 @@
 [
     {
+        "name": "Real-to-Sim Robot Policy Evaluation with Gaussian Splatting Simulation of Soft-Body Interactions",
+        "image": "files/phystwin-eval.gif",
+        "authors": [
+            "Kaifeng Zhang*",
+            "Shuo Sha*",
+            "Hanxiao Jiang",
+            "Matthew Loper",
+            "Hyunjong Song",
+            "Guangyan Cai",
+            "Zhuo Xu",
+            "Xiaochen Hu",
+            "Changxi Zheng",
+            "Yunzhu Li"
+        ],
+        "conference": "arXiv",
+        "special": "",
+        "description": "",
+        "paper": "https://arxiv.org/pdf/2511.04665",
+        "project": "https://real2sim-eval.github.io/",
+        "code": "https://github.com/kywind/real2sim-eval",
+        "github_star": "kywind/real2sim-eval",
+        "extra": ""
+    },
+    {
         "name": "PhysTwin: Physics-Informed Reconstruction and Simulation of Deformable Objects from Videos",
         "image": "files/phystwin.gif",
         "authors": [
