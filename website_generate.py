@@ -108,7 +108,7 @@ def parsePubs(segments):
         if pub["code"] != "":
             content.append(f"<a href={pub['code']} target=\"_blank\">[Code]</a>")
         if "github_star" in pub:
-            content.append(f"<a href=\"https://github.com/{pub['github_star']}\" target=\"_blank\"> <img src=\"https://img.shields.io/github/stars/{pub['github_star']}.svg?style=social&cacheSeconds=7200\" alt=\"GitHub stars\"></a>")
+            content.append(f"<a href=\"https://github.com/{pub['github_star']}\" target=\"_blank\"> <img src=\"https://img.shields.io/github/stars/{pub['github_star']}?style=social&cacheSeconds=86400\" alt=\"GitHub stars\"></a>")
         if "extra" in pub:
             content.append("<br>")
             content.append(pub["extra"])
