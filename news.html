@@ -3,81 +3,82 @@
 
 <head>
   <meta charset="utf-8" />
-  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-  <!-- Use the .htaccess and remove these lines to avoid edge case issues.
-     More info: h5bp.com/i/378 -->
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#f4f0e8" />
   <meta name="google-site-verification" content="s9HfQLacjwqz4eRF6EoYjc99aE5T00xyFcCA3zIniwc" />
 
-  <!-- Our site title and description -->
 <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
 <title>Hanxiao Jiang(Shawn) | 蒋含啸</title>
 
-  <meta name="generator" content="DocPad v6.79.4" />
-
-  <!-- Mobile viewport optimized: h5bp.com/viewport -->
-  <meta name="viewport" content="width=device-width" />
-
-  <!-- Shims: IE6-8 support of HTML5 elements -->
-  <!--[if lt IE 9]>
-    <script async src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-  <![endif]-->
-
   <link rel="stylesheet" href="/styles/twitter-bootstrap.css" />
   <link rel="stylesheet" href="/styles/style.css" />
-  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-  <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
-  <script src="/scripts/bootstrap.min.js"></script>
-  <script src="/scripts/script.js"></script>
 </head>
 
-<body>
-  <div class="container">
-    <section id="content" class="content">
-      <nav class="navbar navbar-default">
+<body id="top" class="page-news">
+  <canvas id="elastic-field" class="elastic-field" role="presentation" aria-hidden="true"></canvas>
+  <div class="field-readout" aria-hidden="true">
+    <span class="field-readout__label">Elastic field</span>
+    <span class="field-readout__hint">move / apply force</span>
+    <span class="field-readout__meter"><i></i></span>
+    <span class="field-readout__value">ε 0.00</span>
+  </div>
+
+  <a class="skip-link" href="#main-content">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container">
+      <nav class="navbar navbar-default" aria-label="Primary navigation">
         <div class="container-fluid">
-          <!-- Brand and toggle get grouped for better mobile display -->
           <div class="navbar-header">
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
-              data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+              data-target="#site-navigation" aria-expanded="false" aria-controls="site-navigation">
               <span class="sr-only">Toggle navigation</span>
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="#"></a>
+            <a class="navbar-brand" href="index.html" aria-label="Hanxiao Jiang, home">
+              <span class="brand-mark" aria-hidden="true">HJ</span>
+              <span class="brand-name">Hanxiao Jiang</span>
+            </a>
           </div>
 
-          <!-- Collect the nav links, forms, and other content for toggling -->
-          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-            <ul class="nav navbar-nav">
+          <div class="collapse navbar-collapse" id="site-navigation">
+            <ul class="nav navbar-nav navbar-right">
               <li><a href="index.html">Home</a></li>
               <li><a href="pubs.html">Publications</a></li>
               <li><a href="news.html">News</a></li>
               <li><a href="experience.html">Experience</a></li>
               <li><a href="contact.html">Contact</a></li>
             </ul>
-          </div><!-- /.navbar-collapse -->
-        </div><!-- /.container-fluid -->
+          </div>
+        </div>
       </nav>
+    </div>
+  </header>
 
-      <div class="row">
-<div style="float: right">
-    <audio controls autoplay loop height="50" width="50">
+  <main id="main-content" class="site-main container">
+    <section class="hero" aria-labelledby="site-owner">
+      <div class="hero-orbit hero-orbit-one" aria-hidden="true"></div>
+      <div class="hero-orbit hero-orbit-two" aria-hidden="true"></div>
+
+      <div class="hero-title">
+        <h1 id="site-owner" class="sr-only">Hanxiao Jiang (Shawn) | 蒋含啸</h1>
+<div class="soundtrack">
+    <span class="soundtrack-label">Site soundtrack</span>
+    <audio controls loop preload="none" aria-label="Site soundtrack">
         <source src="music/yiliaobailiao.mp3" type="audio/mpeg">
-        <embed height="50" width="100" src="music/yiliaobailiao.mp3">
     </audio>
 </div>
-<img src=files/name.jpg alt="image" class="img-responsive" style="width: 700px;" />
+<img src="files/name.jpg" alt="Hanxiao Jiang (Shawn) | 蒋含啸" class="img-responsive" style="width: 700px;" />
 <!-- <h1>Hanxiao Jiang(Shawn) | 蒋含啸</h1> -->
 <h5>为天地立心，为生民立命。 为往圣继绝学，为万世开太平。 --- 《横渠语录》 </h5>
 <h5>To ordain conscience for Heaven and Earth. To secure life and fortune for the people. To continue lost teachings for past sages. To establish peace for all future generations.</h5>
-        <hr>
-        <div class="col-sm-8 pull-left" style="min-height: 280px; display: flex; flex-direction: column;">
+      </div>
+
+      <div class="hero-grid">
+        <div class="hero-copy">
 <p>
    I'm a Ph.D. student in Computer Science at <a href="https://www.columbia.edu/">Columbia University</a>, 
    co-advised by Prof. <a href="https://yunzhuli.github.io/">Yunzhu Li</a> (Columbia) and Prof. <a href="https://shenlong.web.illinois.edu/">Shenlong Wang</a> (UIUC). 
@@ -91,53 +92,9 @@
     href="https://www.zju.edu.cn/english/">Zhejiang University</a> and <a href="https://www.sfu.ca">Simon
     Fraser University</a>.
 </p>
-<p>
-<h3>News</h3>
-<ul>
-<li><b><span style="color: red;">PRO BONO:</span></b> I commit 1–2 hours per week to host pro bono office hours and provide guidance and mentorship for students. Please check <a href="contact.html">here</a> for more details.</li>
-<li>[2026.06] Boba and Deform360 got accepted to <a href="https://eccv.ecva.net/">ECCV 2026</a>.</li>
-<li>[2026.01] <a href="https://real2sim-eval.github.io/">Real2Sim-Eval</a> got accepted to <a href="https://2026.ieee-icra.org/">ICRA 2026</a>.</li>
-<li>[2025.11] I will join <a href="https://research.nvidia.com/labs/lpr/">Nvidia Research</a> in Redmond as a Research Intern in Robotic Perception for 2026 summer.</li>
-<li>[2025.11] <a href="https://3dlg-hcvc.github.io/s2o/">S2O</a> got accepted to <a href="https://wacv.thecvf.com/">WACV 2026</a>.</li>
-<li>[2025.06] <a href="https://jianghanxiao.github.io/phystwin-web/">PhysTwin</a> got accepted to <a href="https://iccv.thecvf.com/">ICCV 2025</a>.</li>
-<li>[2025.06] Invited student talk at CVPR 2025 Worshop on <a href="https://visionmeetphysics.github.io/">Vision Meets Physics: Synergizing Physical Simulation and Computer Vision</a>.</li>
-<li>[2025.03] <a href="https://by-luckk.github.io/PhysGen3D/">PhysGen3D</a> got accepted to <a href="https://cvpr.thecvf.com/">CVPR 2025</a>.</li>
-<li>[2025.01] I will join <a href="https://www.amazon.science/author/hanxiao-jiang">Amazon Robotics</a> in Seattle as an Applied Scientist Intern in 2025 summer.</li>
-<li>[2024.09] <a href="https://jianghanxiao.github.io/roboexp-web/roboexp.pdf">RoboEXP</a> got accepted to <a href="https://www.corl.org/">CoRL 2024</a>.</li>
-<li>[2024.08] Continue my PhD journey at <a href="https://www.columbia.edu/">Columbia University</a> starting from 2024 Fall, working with Prof <a href="https://yunzhuli.github.io/">Yunzhu Li</a> and Prof <a href="https://shenlong.web.illinois.edu/">Shenlong Wang</a>.</li>
-<li>[2024.02] <a href="https://3dlg-hcvc.github.io/hssd/">HSSD-200</a> got accepted to <a href="https://cvpr.thecvf.com/">CVPR 2024</a>.</li>
-<li>[2023.10] <a href="https://3dlg-hcvc.github.io/OPDMulti/">OPDMulti</a> got accepted to <a href="https://3dvconf.github.io/2024/">3DV 2024</a> as Oral.</li>
-<li>[2023.06] My thesis can be viewed <a href="https://summit.sfu.ca/item/36177">here</a>.</li>
-<li>[2023.03] Successfully defended my MSc thesis!</li>
-<li>[2023.03] My new journey will be a CS PhD at <a href="https://illinois.edu/">UIUC</a> starting from 2023 Fall, working with Prof <a href="https://yunzhuli.github.io/">Yunzhu Li</a> and Prof <a href="https://shenlong.web.illinois.edu/">Shenlong Wang</a></li>
-<li>[2023.01] Got Helmut & Hugo Eppich Family Grad Scholarship for 2023 Spring, <a href="https://www.sfu.ca">Simon Fraser University</a>. </li>
-<li>[2022.09] <a href="https://3dlg-hcvc.github.io/multiscan/#/">MultiScan</a> got accepted to <a href="https://nips.cc/">NeurIPS 2022</a>.</li>
-<li>[2022.08] Student Volunteer at <a href="https://s2022.siggraph.org/">SIGGRAPH 2022</a>.</li>
-<li>[2022.08] <a href="https://3dlg-hcvc.github.io/3dhoi/">Articulated 3D HOI</a> got accepted to <a href="https://3dvconf.github.io/2022/">3DV 2022</a>.</li>
-<li>[2022.07] <a href="https://3dlg-hcvc.github.io/OPD/" target="_blank">OPD</a> got accepted to <a href="https://eccv2022.ecva.net/" target="_blank">ECCV 2022</a> as Oral.</li>
-<li>[2021.12] Got Helmut & Hugo Eppich Family Grad Scholarship for 2022 Spring, <a href="https://www.sfu.ca">Simon Fraser University</a>. </li>
-<li>[2020.10] Got <a href="http://www.sfu.ca/students/honour-rolls.html"> President's & Dean's Honour Roll</a> for 2020 Summer, <a href="https://www.sfu.ca">Simon Fraser University</a>.</li> 
-<li>[2020.10] <a href="http://visual.cs.brown.edu/projects/articulations-webpage/articulations_3dv2020.pdf">Motion Annotation Programs</a> got accepted to <a href="http://3dv2020.dgcv.nii.ac.jp/">3DV 2020</a>.</li>
-<li>[2020.09] Awarded the degree of Bachelor of Engineer in <a href="https://www.zju.edu.cn/english/">Zhejiang University</a>.</li>
-<li>[2020.09] Awarded the degree of Bachelor of Science (First Class with Distinction) in <a href="https://www.sfu.ca">Simon Fraser University</a>.</li>
-<li>[2020.06] Got SFU Alumni Scholarship, <a href="https://www.sfu.ca">Simon Fraser University</a>. </li>
-<li>[2020.05] Got Undergraduate Open Scholarship for 2020 Summer, <a href="https://www.sfu.ca">Simon Fraser University</a>. </li>
-<li>[2020.05] Got <a href="http://www.sfu.ca/students/honour-rolls.html"> President's & Dean's Honour Roll</a> for 2020 Spring, <a href="https://www.sfu.ca">Simon Fraser University</a>.</li> 
-<li>[2020.03] I will be a master student in <a href="https://www.sfu.ca">Simon Fraser University</a>, instructed by Prof. <a href="https://angelxuanchang.github.io">Angel Xuan Chang</a>.</li>
-<li>[2020.02] <a href="https://arxiv.org/abs/2003.08515">SAPIEN</a> got accepted to <a href="http://cvpr2020.thecvf.com/">CVPR 2020</a>. </li>
-<li>[2020.02] Got Fortinet Undergraduate Scholarship in Computing Science and Engineering, <a href="https://www.sfu.ca">Simon Fraser University</a>. </li>
-<li>[2020.01] Got Undergraduate Open Scholarship, <a href="https://www.sfu.ca">Simon Fraser University</a>. </li>
-<li>[2019.06] <a href="https://www2.cs.sfu.ca/~funt/Hao+Funt_MIST_CIC27_2019.pdf">Evaluating Colour Constancy</a> got accepted to <a href="https://www.imaging.org/site/IST/Conferences/Color_and_Imaging/CIC27__2019_/IST/Conferences/CIC/CIC2019/CIC27_Home.aspx?hkey=0fb3eb64-061f-4609-8d3c-7b8e6c0c4b90">CIC 2019</a>. </li>
-<li>[2019.04] Internship in <a href='https://www.daoai.ca'>DaoAI Robotics Inc</a>.</li>
-<li>[2019.03] Started studying with professor <a href="https://angelxuanchang.github.io">Angel Xuan Chang</a> and professor <a href="https://msavva.github.io">Manolis Savva</a>.</li>
-<li>[2018.12] Got Scholarship of Academic Excellence, <a href="https://www.zju.edu.cn/english/">Zhejiang University</a>.</li>
-<li>[2018.05] Got SFU-Zhejiang University DDP Entrance Scholarship, <a href="https://www.sfu.ca">Simon Fraser University</a>.</li>
-<li>[2017.11] Got National Scholarship, China.</li>
-<li>[2017.11] Got Scholarship of Academic Excellence, <a href="https://www.zju.edu.cn/english/">Zhejiang University</a>.</li>
-</ul>
-</p>
         </div>
-        <div class="col-sm-4 text-right pull-right">
+
+        <aside class="profile-card" aria-label="Profile and links">
 <img src="files/hanxiao.jpg" alt="Hanxiao Jiang" width="150px" />
 <div style="font-family:monospace;">
 hanxiao.jiang-{at}-columbia-"dot"-edu
@@ -149,29 +106,333 @@ Aug 2023 - Present<br />
 <a href="https://scholar.google.com/citations?user=-XWZKZAAAAAJ&hl=en">Google Scholar</a><br />
 <a href="https://github.com/Jianghanxiao">Github</a><br />
 <a href="https://twitter.com/jiang_hanxiao">Twitter</a><br />
-        </div>
+        </aside>
       </div>
-      <br>
 
+      <div class="hero-updates">
+      </div>
+    </section>
+
+    <div class="main-content">
+<section class="news-block" aria-labelledby="news-title">
+  <header class="section-heading news-heading">
+    <span class="section-index" aria-hidden="true">Updates /</span>
+    <h2 id="news-title">News</h2>
+  </header>
+<aside class="community-note">
+  <div class="community-note__meta"><span></span>Community</div>
+  <div class="community-note__copy">I commit 1–2 hours per week to host pro bono office hours and provide guidance and mentorship for students. Please check <a href="contact.html">here</a> for more details.</div>
+</aside>
+  <div class="news-archive">
+    <section class="news-year" aria-labelledby="news-year-2026">
+      <h3 class="news-year-title" id="news-year-2026">2026</h3>
+      <ol class="news-list">
+    <li class="news-item">
+      <time class="news-date" datetime="2026-06">
+        <span class="news-month">Jun</span><span class="sr-only"> 2026</span>
+      </time>
+      <div class="news-copy">Boba and Deform360 got accepted to <a href="https://eccv.ecva.net/">ECCV 2026</a>.</div>
+    </li>
+    <li class="news-item">
+      <time class="news-date" datetime="2026-01">
+        <span class="news-month">Jan</span><span class="sr-only"> 2026</span>
+      </time>
+      <div class="news-copy"><a href="https://real2sim-eval.github.io/">Real2Sim-Eval</a> got accepted to <a href="https://2026.ieee-icra.org/">ICRA 2026</a>.</div>
+    </li>
+      </ol>
+    </section>
+    <section class="news-year" aria-labelledby="news-year-2025">
+      <h3 class="news-year-title" id="news-year-2025">2025</h3>
+      <ol class="news-list">
+    <li class="news-item">
+      <time class="news-date" datetime="2025-11">
+        <span class="news-month">Nov</span><span class="sr-only"> 2025</span>
+      </time>
+      <div class="news-copy">I will join <a href="https://research.nvidia.com/labs/lpr/">Nvidia Research</a> in Redmond as a Research Intern in Robotic Perception for 2026 summer.</div>
+    </li>
+    <li class="news-item">
+      <time class="news-date" datetime="2025-11">
+        <span class="news-month">Nov</span><span class="sr-only"> 2025</span>
+      </time>
+      <div class="news-copy"><a href="https://3dlg-hcvc.github.io/s2o/">S2O</a> got accepted to <a href="https://wacv.thecvf.com/">WACV 2026</a>.</div>
+    </li>
+    <li class="news-item">
+      <time class="news-date" datetime="2025-06">
+        <span class="news-month">Jun</span><span class="sr-only"> 2025</span>
+      </time>
+      <div class="news-copy"><a href="https://jianghanxiao.github.io/phystwin-web/">PhysTwin</a> got accepted to <a href="https://iccv.thecvf.com/">ICCV 2025</a>.</div>
+    </li>
+    <li class="news-item">
+      <time class="news-date" datetime="2025-06">
+        <span class="news-month">Jun</span><span class="sr-only"> 2025</span>
+      </time>
+      <div class="news-copy">Invited student talk at CVPR 2025 Worshop on <a href="https://visionmeetphysics.github.io/">Vision Meets Physics: Synergizing Physical Simulation and Computer Vision</a>.</div>
+    </li>
+    <li class="news-item">
+      <time class="news-date" datetime="2025-03">
+        <span class="news-month">Mar</span><span class="sr-only"> 2025</span>
+      </time>
+      <div class="news-copy"><a href="https://by-luckk.github.io/PhysGen3D/">PhysGen3D</a> got accepted to <a href="https://cvpr.thecvf.com/">CVPR 2025</a>.</div>
+    </li>
+    <li class="news-item">
+      <time class="news-date" datetime="2025-01">
+        <span class="news-month">Jan</span><span class="sr-only"> 2025</span>
+      </time>
+      <div class="news-copy">I will join <a href="https://www.amazon.science/author/hanxiao-jiang">Amazon Robotics</a> in Seattle as an Applied Scientist Intern in 2025 summer.</div>
+    </li>
+      </ol>
+    </section>
+    <section class="news-year" aria-labelledby="news-year-2024">
+      <h3 class="news-year-title" id="news-year-2024">2024</h3>
+      <ol class="news-list">
+    <li class="news-item">
+      <time class="news-date" datetime="2024-09">
+        <span class="news-month">Sep</span><span class="sr-only"> 2024</span>
+      </time>
+      <div class="news-copy"><a href="https://jianghanxiao.github.io/roboexp-web/roboexp.pdf">RoboEXP</a> got accepted to <a href="https://www.corl.org/">CoRL 2024</a>.</div>
+    </li>
+    <li class="news-item">
+      <time class="news-date" datetime="2024-08">
+        <span class="news-month">Aug</span><span class="sr-only"> 2024</span>
+      </time>
+      <div class="news-copy">Continue my PhD journey at <a href="https://www.columbia.edu/">Columbia University</a> starting from 2024 Fall, working with Prof <a href="https://yunzhuli.github.io/">Yunzhu Li</a> and Prof <a href="https://shenlong.web.illinois.edu/">Shenlong Wang</a>.</div>
+    </li>
+    <li class="news-item">
+      <time class="news-date" datetime="2024-02">
+        <span class="news-month">Feb</span><span class="sr-only"> 2024</span>
+      </time>
+      <div class="news-copy"><a href="https://3dlg-hcvc.github.io/hssd/">HSSD-200</a> got accepted to <a href="https://cvpr.thecvf.com/">CVPR 2024</a>.</div>
+    </li>
+      </ol>
+    </section>
+    <section class="news-year" aria-labelledby="news-year-2023">
+      <h3 class="news-year-title" id="news-year-2023">2023</h3>
+      <ol class="news-list">
+    <li class="news-item">
+      <time class="news-date" datetime="2023-10">
+        <span class="news-month">Oct</span><span class="sr-only"> 2023</span>
+      </time>
+      <div class="news-copy"><a href="https://3dlg-hcvc.github.io/OPDMulti/">OPDMulti</a> got accepted to <a href="https://3dvconf.github.io/2024/">3DV 2024</a> as Oral.</div>
+    </li>
+    <li class="news-item">
+      <time class="news-date" datetime="2023-06">
+        <span class="news-month">Jun</span><span class="sr-only"> 2023</span>
+      </time>
+      <div class="news-copy">My thesis can be viewed <a href="https://summit.sfu.ca/item/36177">here</a>.</div>
+    </li>
+    <li class="news-item">
+      <time class="news-date" datetime="2023-03">
+        <span class="news-month">Mar</span><span class="sr-only"> 2023</span>
+      </time>
+      <div class="news-copy">Successfully defended my MSc thesis!</div>
+    </li>
+    <li class="news-item">
+      <time class="news-date" datetime="2023-03">
+        <span class="news-month">Mar</span><span class="sr-only"> 2023</span>
+      </time>
+      <div class="news-copy">My new journey will be a CS PhD at <a href="https://illinois.edu/">UIUC</a> starting from 2023 Fall, working with Prof <a href="https://yunzhuli.github.io/">Yunzhu Li</a> and Prof <a href="https://shenlong.web.illinois.edu/">Shenlong Wang</a></div>
+    </li>
+    <li class="news-item">
+      <time class="news-date" datetime="2023-01">
+        <span class="news-month">Jan</span><span class="sr-only"> 2023</span>
+      </time>
+      <div class="news-copy">Got Helmut & Hugo Eppich Family Grad Scholarship for 2023 Spring, <a href="https://www.sfu.ca">Simon Fraser University</a>.</div>
+    </li>
+      </ol>
+    </section>
+    <section class="news-year" aria-labelledby="news-year-2022">
+      <h3 class="news-year-title" id="news-year-2022">2022</h3>
+      <ol class="news-list">
+    <li class="news-item">
+      <time class="news-date" datetime="2022-09">
+        <span class="news-month">Sep</span><span class="sr-only"> 2022</span>
+      </time>
+      <div class="news-copy"><a href="https://3dlg-hcvc.github.io/multiscan/#/">MultiScan</a> got accepted to <a href="https://nips.cc/">NeurIPS 2022</a>.</div>
+    </li>
+    <li class="news-item">
+      <time class="news-date" datetime="2022-08">
+        <span class="news-month">Aug</span><span class="sr-only"> 2022</span>
+      </time>
+      <div class="news-copy">Student Volunteer at <a href="https://s2022.siggraph.org/">SIGGRAPH 2022</a>.</div>
+    </li>
+    <li class="news-item">
+      <time class="news-date" datetime="2022-08">
+        <span class="news-month">Aug</span><span class="sr-only"> 2022</span>
+      </time>
+      <div class="news-copy"><a href="https://3dlg-hcvc.github.io/3dhoi/">Articulated 3D HOI</a> got accepted to <a href="https://3dvconf.github.io/2022/">3DV 2022</a>.</div>
+    </li>
+    <li class="news-item">
+      <time class="news-date" datetime="2022-07">
+        <span class="news-month">Jul</span><span class="sr-only"> 2022</span>
+      </time>
+      <div class="news-copy"><a href="https://3dlg-hcvc.github.io/OPD/" target="_blank">OPD</a> got accepted to <a href="https://eccv2022.ecva.net/" target="_blank">ECCV 2022</a> as Oral.</div>
+    </li>
+      </ol>
+    </section>
+    <section class="news-year" aria-labelledby="news-year-2021">
+      <h3 class="news-year-title" id="news-year-2021">2021</h3>
+      <ol class="news-list">
+    <li class="news-item">
+      <time class="news-date" datetime="2021-12">
+        <span class="news-month">Dec</span><span class="sr-only"> 2021</span>
+      </time>
+      <div class="news-copy">Got Helmut & Hugo Eppich Family Grad Scholarship for 2022 Spring, <a href="https://www.sfu.ca">Simon Fraser University</a>.</div>
+    </li>
+      </ol>
+    </section>
+    <section class="news-year" aria-labelledby="news-year-2020">
+      <h3 class="news-year-title" id="news-year-2020">2020</h3>
+      <ol class="news-list">
+    <li class="news-item">
+      <time class="news-date" datetime="2020-10">
+        <span class="news-month">Oct</span><span class="sr-only"> 2020</span>
+      </time>
+      <div class="news-copy">Got <a href="http://www.sfu.ca/students/honour-rolls.html"> President's & Dean's Honour Roll</a> for 2020 Summer, <a href="https://www.sfu.ca">Simon Fraser University</a>.</div>
+    </li>
+    <li class="news-item">
+      <time class="news-date" datetime="2020-10">
+        <span class="news-month">Oct</span><span class="sr-only"> 2020</span>
+      </time>
+      <div class="news-copy"><a href="http://visual.cs.brown.edu/projects/articulations-webpage/articulations_3dv2020.pdf">Motion Annotation Programs</a> got accepted to <a href="http://3dv2020.dgcv.nii.ac.jp/">3DV 2020</a>.</div>
+    </li>
+    <li class="news-item">
+      <time class="news-date" datetime="2020-09">
+        <span class="news-month">Sep</span><span class="sr-only"> 2020</span>
+      </time>
+      <div class="news-copy">Awarded the degree of Bachelor of Engineer in <a href="https://www.zju.edu.cn/english/">Zhejiang University</a>.</div>
+    </li>
+    <li class="news-item">
+      <time class="news-date" datetime="2020-09">
+        <span class="news-month">Sep</span><span class="sr-only"> 2020</span>
+      </time>
+      <div class="news-copy">Awarded the degree of Bachelor of Science (First Class with Distinction) in <a href="https://www.sfu.ca">Simon Fraser University</a>.</div>
+    </li>
+    <li class="news-item">
+      <time class="news-date" datetime="2020-06">
+        <span class="news-month">Jun</span><span class="sr-only"> 2020</span>
+      </time>
+      <div class="news-copy">Got SFU Alumni Scholarship, <a href="https://www.sfu.ca">Simon Fraser University</a>.</div>
+    </li>
+    <li class="news-item">
+      <time class="news-date" datetime="2020-05">
+        <span class="news-month">May</span><span class="sr-only"> 2020</span>
+      </time>
+      <div class="news-copy">Got Undergraduate Open Scholarship for 2020 Summer, <a href="https://www.sfu.ca">Simon Fraser University</a>.</div>
+    </li>
+    <li class="news-item">
+      <time class="news-date" datetime="2020-05">
+        <span class="news-month">May</span><span class="sr-only"> 2020</span>
+      </time>
+      <div class="news-copy">Got <a href="http://www.sfu.ca/students/honour-rolls.html"> President's & Dean's Honour Roll</a> for 2020 Spring, <a href="https://www.sfu.ca">Simon Fraser University</a>.</div>
+    </li>
+    <li class="news-item">
+      <time class="news-date" datetime="2020-03">
+        <span class="news-month">Mar</span><span class="sr-only"> 2020</span>
+      </time>
+      <div class="news-copy">I will be a master student in <a href="https://www.sfu.ca">Simon Fraser University</a>, instructed by Prof. <a href="https://angelxuanchang.github.io">Angel Xuan Chang</a>.</div>
+    </li>
+    <li class="news-item">
+      <time class="news-date" datetime="2020-02">
+        <span class="news-month">Feb</span><span class="sr-only"> 2020</span>
+      </time>
+      <div class="news-copy"><a href="https://arxiv.org/abs/2003.08515">SAPIEN</a> got accepted to <a href="http://cvpr2020.thecvf.com/">CVPR 2020</a>.</div>
+    </li>
+    <li class="news-item">
+      <time class="news-date" datetime="2020-02">
+        <span class="news-month">Feb</span><span class="sr-only"> 2020</span>
+      </time>
+      <div class="news-copy">Got Fortinet Undergraduate Scholarship in Computing Science and Engineering, <a href="https://www.sfu.ca">Simon Fraser University</a>.</div>
+    </li>
+    <li class="news-item">
+      <time class="news-date" datetime="2020-01">
+        <span class="news-month">Jan</span><span class="sr-only"> 2020</span>
+      </time>
+      <div class="news-copy">Got Undergraduate Open Scholarship, <a href="https://www.sfu.ca">Simon Fraser University</a>.</div>
+    </li>
+      </ol>
+    </section>
+    <section class="news-year" aria-labelledby="news-year-2019">
+      <h3 class="news-year-title" id="news-year-2019">2019</h3>
+      <ol class="news-list">
+    <li class="news-item">
+      <time class="news-date" datetime="2019-06">
+        <span class="news-month">Jun</span><span class="sr-only"> 2019</span>
+      </time>
+      <div class="news-copy"><a href="https://www2.cs.sfu.ca/~funt/Hao+Funt_MIST_CIC27_2019.pdf">Evaluating Colour Constancy</a> got accepted to <a href="https://www.imaging.org/site/IST/Conferences/Color_and_Imaging/CIC27__2019_/IST/Conferences/CIC/CIC2019/CIC27_Home.aspx?hkey=0fb3eb64-061f-4609-8d3c-7b8e6c0c4b90">CIC 2019</a>.</div>
+    </li>
+    <li class="news-item">
+      <time class="news-date" datetime="2019-04">
+        <span class="news-month">Apr</span><span class="sr-only"> 2019</span>
+      </time>
+      <div class="news-copy">Internship in <a href='https://www.daoai.ca'>DaoAI Robotics Inc</a>.</div>
+    </li>
+    <li class="news-item">
+      <time class="news-date" datetime="2019-03">
+        <span class="news-month">Mar</span><span class="sr-only"> 2019</span>
+      </time>
+      <div class="news-copy">Started studying with professor <a href="https://angelxuanchang.github.io">Angel Xuan Chang</a> and professor <a href="https://msavva.github.io">Manolis Savva</a>.</div>
+    </li>
+      </ol>
+    </section>
+    <section class="news-year" aria-labelledby="news-year-2018">
+      <h3 class="news-year-title" id="news-year-2018">2018</h3>
+      <ol class="news-list">
+    <li class="news-item">
+      <time class="news-date" datetime="2018-12">
+        <span class="news-month">Dec</span><span class="sr-only"> 2018</span>
+      </time>
+      <div class="news-copy">Got Scholarship of Academic Excellence, <a href="https://www.zju.edu.cn/english/">Zhejiang University</a>.</div>
+    </li>
+    <li class="news-item">
+      <time class="news-date" datetime="2018-05">
+        <span class="news-month">May</span><span class="sr-only"> 2018</span>
+      </time>
+      <div class="news-copy">Got SFU-Zhejiang University DDP Entrance Scholarship, <a href="https://www.sfu.ca">Simon Fraser University</a>.</div>
+    </li>
+      </ol>
+    </section>
+    <section class="news-year" aria-labelledby="news-year-2017">
+      <h3 class="news-year-title" id="news-year-2017">2017</h3>
+      <ol class="news-list">
+    <li class="news-item">
+      <time class="news-date" datetime="2017-11">
+        <span class="news-month">Nov</span><span class="sr-only"> 2017</span>
+      </time>
+      <div class="news-copy">Got National Scholarship, China.</div>
+    </li>
+    <li class="news-item">
+      <time class="news-date" datetime="2017-11">
+        <span class="news-month">Nov</span><span class="sr-only"> 2017</span>
+      </time>
+      <div class="news-copy">Got Scholarship of Academic Excellence, <a href="https://www.zju.edu.cn/english/">Zhejiang University</a>.</div>
+    </li>
+      </ol>
+    </section>
   </div>
-  </section>
-  <!-- <footer>
-    <p class="pull-right">
-      Last updated at 2020-10-07T10:56:51.321Z
-    </p>
-  </footer> -->
-  </div><!-- /container -->
-  
+</section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container site-footer-inner">
+      <p>Hanxiao Jiang <span aria-hidden="true">·</span> 蒋含啸</p>
+      <a href="#top">Back to top <span aria-hidden="true">↑</span></a>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <script src="/scripts/bootstrap.min.js"></script>
+  <script src="/scripts/script.js"></script>
+  <script src="/scripts/elastic-field.js"></script>
+
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-162763877-1"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-
     gtag('config', 'UA-162763877-1');
   </script>
-
 </body>
 
 </html>

@@ -3,81 +3,82 @@
 
 <head>
   <meta charset="utf-8" />
-  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-  <!-- Use the .htaccess and remove these lines to avoid edge case issues.
-     More info: h5bp.com/i/378 -->
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#f4f0e8" />
   <meta name="google-site-verification" content="s9HfQLacjwqz4eRF6EoYjc99aE5T00xyFcCA3zIniwc" />
 
-  <!-- Our site title and description -->
 <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
 <title>Hanxiao Jiang(Shawn) | 蒋含啸</title>
 
-  <meta name="generator" content="DocPad v6.79.4" />
-
-  <!-- Mobile viewport optimized: h5bp.com/viewport -->
-  <meta name="viewport" content="width=device-width" />
-
-  <!-- Shims: IE6-8 support of HTML5 elements -->
-  <!--[if lt IE 9]>
-    <script async src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-  <![endif]-->
-
   <link rel="stylesheet" href="/styles/twitter-bootstrap.css" />
   <link rel="stylesheet" href="/styles/style.css" />
-  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-  <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
-  <script src="/scripts/bootstrap.min.js"></script>
-  <script src="/scripts/script.js"></script>
 </head>
 
-<body>
-  <div class="container">
-    <section id="content" class="content">
-      <nav class="navbar navbar-default">
+<body id="top" class="page-home">
+  <canvas id="elastic-field" class="elastic-field" role="presentation" aria-hidden="true"></canvas>
+  <div class="field-readout" aria-hidden="true">
+    <span class="field-readout__label">Elastic field</span>
+    <span class="field-readout__hint">move / apply force</span>
+    <span class="field-readout__meter"><i></i></span>
+    <span class="field-readout__value">ε 0.00</span>
+  </div>
+
+  <a class="skip-link" href="#main-content">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container">
+      <nav class="navbar navbar-default" aria-label="Primary navigation">
         <div class="container-fluid">
-          <!-- Brand and toggle get grouped for better mobile display -->
           <div class="navbar-header">
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
-              data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+              data-target="#site-navigation" aria-expanded="false" aria-controls="site-navigation">
               <span class="sr-only">Toggle navigation</span>
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="#"></a>
+            <a class="navbar-brand" href="index.html" aria-label="Hanxiao Jiang, home">
+              <span class="brand-mark" aria-hidden="true">HJ</span>
+              <span class="brand-name">Hanxiao Jiang</span>
+            </a>
           </div>
 
-          <!-- Collect the nav links, forms, and other content for toggling -->
-          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-            <ul class="nav navbar-nav">
+          <div class="collapse navbar-collapse" id="site-navigation">
+            <ul class="nav navbar-nav navbar-right">
               <li><a href="index.html">Home</a></li>
               <li><a href="pubs.html">Publications</a></li>
               <li><a href="news.html">News</a></li>
               <li><a href="experience.html">Experience</a></li>
               <li><a href="contact.html">Contact</a></li>
             </ul>
-          </div><!-- /.navbar-collapse -->
-        </div><!-- /.container-fluid -->
+          </div>
+        </div>
       </nav>
+    </div>
+  </header>
 
-      <div class="row">
-<div style="float: right">
-    <audio controls autoplay loop height="50" width="50">
+  <main id="main-content" class="site-main container">
+    <section class="hero" aria-labelledby="site-owner">
+      <div class="hero-orbit hero-orbit-one" aria-hidden="true"></div>
+      <div class="hero-orbit hero-orbit-two" aria-hidden="true"></div>
+
+      <div class="hero-title">
+        <h1 id="site-owner" class="sr-only">Hanxiao Jiang (Shawn) | 蒋含啸</h1>
+<div class="soundtrack">
+    <span class="soundtrack-label">Site soundtrack</span>
+    <audio controls loop preload="none" aria-label="Site soundtrack">
         <source src="music/yiliaobailiao.mp3" type="audio/mpeg">
-        <embed height="50" width="100" src="music/yiliaobailiao.mp3">
     </audio>
 </div>
-<img src=files/name.jpg alt="image" class="img-responsive" style="width: 700px;" />
+<img src="files/name.jpg" alt="Hanxiao Jiang (Shawn) | 蒋含啸" class="img-responsive" style="width: 700px;" />
 <!-- <h1>Hanxiao Jiang(Shawn) | 蒋含啸</h1> -->
 <h5>为天地立心，为生民立命。 为往圣继绝学，为万世开太平。 --- 《横渠语录》 </h5>
 <h5>To ordain conscience for Heaven and Earth. To secure life and fortune for the people. To continue lost teachings for past sages. To establish peace for all future generations.</h5>
-        <hr>
-        <div class="col-sm-8 pull-left" style="min-height: 280px; display: flex; flex-direction: column;">
+      </div>
+
+      <div class="hero-grid">
+        <div class="hero-copy">
 <p>
    I'm a Ph.D. student in Computer Science at <a href="https://www.columbia.edu/">Columbia University</a>, 
    co-advised by Prof. <a href="https://yunzhuli.github.io/">Yunzhu Li</a> (Columbia) and Prof. <a href="https://shenlong.web.illinois.edu/">Shenlong Wang</a> (UIUC). 
@@ -91,21 +92,9 @@
     href="https://www.zju.edu.cn/english/">Zhejiang University</a> and <a href="https://www.sfu.ca">Simon
     Fraser University</a>.
 </p>
-<p>
-<h3>News</h3>
-<ul>
-<li><b><span style="color: red;">PRO BONO:</span></b> I commit 1–2 hours per week to host pro bono office hours and provide guidance and mentorship for students. Please check <a href="contact.html">here</a> for more details.</li>
-<li>[2026.06] Boba and Deform360 got accepted to <a href="https://eccv.ecva.net/">ECCV 2026</a>.</li>
-<li>[2026.01] <a href="https://real2sim-eval.github.io/">Real2Sim-Eval</a> got accepted to <a href="https://2026.ieee-icra.org/">ICRA 2026</a>.</li>
-<li>[2025.11] I will join <a href="https://research.nvidia.com/labs/lpr/">Nvidia Research</a> in Redmond as a Research Intern in Robotic Perception for 2026 summer.</li>
-<li>[2025.11] <a href="https://3dlg-hcvc.github.io/s2o/">S2O</a> got accepted to <a href="https://wacv.thecvf.com/">WACV 2026</a>.</li>
-<li>[2025.06] <a href="https://jianghanxiao.github.io/phystwin-web/">PhysTwin</a> got accepted to <a href="https://iccv.thecvf.com/">ICCV 2025</a>.</li>
-<li>[2025.06] Invited student talk at CVPR 2025 Worshop on <a href="https://visionmeetphysics.github.io/">Vision Meets Physics: Synergizing Physical Simulation and Computer Vision</a>.</li>
-</ul>
-<a href="news.html">More...</a>
-</p>
         </div>
-        <div class="col-sm-4 text-right pull-right">
+
+        <aside class="profile-card" aria-label="Profile and links">
 <img src="files/hanxiao.jpg" alt="Hanxiao Jiang" width="150px" />
 <div style="font-family:monospace;">
 hanxiao.jiang-{at}-columbia-"dot"-edu
@@ -117,352 +106,322 @@ Aug 2023 - Present<br />
 <a href="https://scholar.google.com/citations?user=-XWZKZAAAAAJ&hl=en">Google Scholar</a><br />
 <a href="https://github.com/Jianghanxiao">Github</a><br />
 <a href="https://twitter.com/jiang_hanxiao">Twitter</a><br />
-        </div>
+        </aside>
       </div>
-      <br>
 
-<div class="row">
-    <div class="col-sm-12">
-      <div class="panel panel-default">
-        <div class="panel-heading">
-          <h2>Preprints & Publications</h2>
-        </div>
-        <div class="panel-body">
-
-<div class="row">
-    <div class="col-md-3">
-<a href="#"><img src=files/phystwin-eval.gif alt="image" class="img-responsive" style="width: 300px;" /></a>
-      &nbsp;
-    </div>
-    <div class="col-md-9">
-<h4 class="red">Real-to-Sim Robot Policy Evaluation with Gaussian Splatting Simulation of Soft-Body Interactions</h4>
-<a href=https://kywind.github.io/ target="_blank">Kaifeng Zhang*</a>,
-<a href=https://shuosha.github.io/ target="_blank">Shuo Sha*</a>,
-<strong>Hanxiao Jiang</strong>,
-<a href=https://scholar.google.com/citations?user=xokChDMAAAAJ&hl=en target="_blank">Matthew Loper</a>,
-<a href=https://sites.google.com/nyu.edu/jay-hyunjong-song target="_blank">Hyunjong Song</a>,
-<a href=https://guangyancai.me/ target="_blank">Guangyan Cai</a>,
-<a href=https://drzhuoxu.github.io/ target="_blank">Zhuo Xu</a>,
-<a href=https://scholar.google.com/citations?user=-MaXMRAAAAAJ&hl=en target="_blank">Xiaochen Hu</a>,
-<a href=https://www.cs.columbia.edu/~cxz/ target="_blank">Changxi Zheng</a>,
-<a href=https://yunzhuli.github.io/ target="_blank">Yunzhu Li</a><br>
-<a href=https://2026.ieee-icra.org/ target="_blank">ICRA 2026</a>
-<br>
-<a href=https://arxiv.org/pdf/2511.04665 target="_blank">[Paper]</a>
-<a href=https://real2sim-eval.github.io/ target="_blank">[Project]</a>
-<a href=https://github.com/kywind/real2sim-eval target="_blank">[Code]</a>
-<a href="https://github.com/kywind/real2sim-eval" target="_blank"> <img src="https://img.shields.io/github/stars/kywind/real2sim-eval?style=social&cacheSeconds=86400" alt="GitHub stars"></a>
-<br>
-
-    </div>
-  </div>
-  <hr>
-<br>
-<div class="row">
-    <div class="col-md-3">
-<a href="#"><img src=files/phystwin.gif alt="image" class="img-responsive" style="width: 300px;" /></a>
-      &nbsp;
-    </div>
-    <div class="col-md-9">
-<h4 class="red">PhysTwin: Physics-Informed Reconstruction and Simulation of Deformable Objects from Videos</h4>
-<strong>Hanxiao Jiang</strong>,
-<a href=https://haoyuhsu.github.io/ target="_blank">Hao-Yu Hsu</a>,
-<a href=https://kywind.github.io/ target="_blank">Kaifeng Zhang</a>,
-<a href=https://www.linkedin.com/in/hnyu/ target="_blank">Hsin-Ni Yu</a>,
-<a href=https://shenlong.web.illinois.edu/ target="_blank">Shenlong Wang</a>,
-<a href=https://yunzhuli.github.io/ target="_blank">Yunzhu Li</a><br>
-<a href=https://iccv.thecvf.com/ target="_blank">ICCV 2025</a>
-<br>
-<a href=https://jianghanxiao.github.io/phystwin-web/phystwin.pdf target="_blank">[Paper]</a>
-<a href=https://jianghanxiao.github.io/phystwin-web/ target="_blank">[Project]</a>
-<a href=https://github.com/Jianghanxiao/PhysTwin target="_blank">[Code]</a>
-<a href="https://github.com/jianghanxiao/PhysTwin" target="_blank"> <img src="https://img.shields.io/github/stars/jianghanxiao/PhysTwin?style=social&cacheSeconds=86400" alt="GitHub stars"></a>
-<br>
-<b><i style="color: red">The work I love most — code maintained for the long term.</i></b></a>
-    </div>
-  </div>
-  <hr>
-<br>
-<div class="row">
-    <div class="col-md-3">
-<a href="#"><img src=files/physgen3d.gif alt="image" class="img-responsive" style="width: 300px;" /></a>
-      &nbsp;
-    </div>
-    <div class="col-md-9">
-<h4 class="red">PhysGen3D: Crafting a Miniature Interactive World from a Single Image</h4>
-<a href=https://github.com/by-luckk target="_blank">Boyuan Chen</a>,
-<strong>Hanxiao Jiang</strong>,
-<a href=https://stevenlsw.github.io/ target="_blank">Shaowei Liu</a>,
-<a href=https://saurabhg.web.illinois.edu/ target="_blank">Saurabh Gupta</a>,
-<a href=https://yunzhuli.github.io/ target="_blank">Yunzhu Li</a>,
-<a href=https://sites.google.com/view/fromandto target="_blank">Hao Zhao</a>,
-<a href=https://shenlong.web.illinois.edu/ target="_blank">Shenlong Wang</a><br>
-<a href=https://cvpr.thecvf.com/ target="_blank">CVPR 2025</a>
-<br>
-<a href=https://arxiv.org/abs/2503.20746 target="_blank">[Paper]</a>
-<a href=https://by-luckk.github.io/PhysGen3D/ target="_blank">[Project]</a>
-<a href=https://github.com/by-luckk/PhysGen3D target="_blank">[Code]</a>
-<a href="https://github.com/by-luckk/PhysGen3D" target="_blank"> <img src="https://img.shields.io/github/stars/by-luckk/PhysGen3D?style=social&cacheSeconds=86400" alt="GitHub stars"></a>
-    </div>
-  </div>
-  <hr>
-<br>
-<div class="row">
-    <div class="col-md-3">
-<a href="#"><img src=files/s2o.gif alt="image" class="img-responsive" style="width: 300px;" /></a>
-      &nbsp;
-    </div>
-    <div class="col-md-9">
-<h4 class="red">S2O: Static to Openable Enhancement for Articulated 3D Objects</h4>
-<a href=https://diliash.github.io/ target="_blank">Denys Iliash</a>,
-<strong>Hanxiao Jiang</strong>,
-<a href=https://github.com/eamonn-zh target="_blank">Yiming Zhang</a>,
-<a href=https://msavva.github.io/ target="_blank">Manolis Savva</a>,
-<a href=https://angelxuanchang.github.io/ target="_blank">Angel X. Chang</a><br>
-<a href=https://wacv.thecvf.com/ target="_blank">WACV 2026</a>
-<br>
-<a href=https://arxiv.org/abs/2409.18896 target="_blank">[Paper]</a>
-<a href=https://3dlg-hcvc.github.io/s2o/ target="_blank">[Project]</a>
-<a href=https://github.com/3dlg-hcvc/s2o target="_blank">[Code]</a>
-<a href="https://github.com/3dlg-hcvc/s2o" target="_blank"> <img src="https://img.shields.io/github/stars/3dlg-hcvc/s2o?style=social&cacheSeconds=86400" alt="GitHub stars"></a>
-    </div>
-  </div>
-  <hr>
-<br>
-<div class="row">
-    <div class="col-md-3">
-<a href="#"><img src=files/roboexp.gif alt="image" class="img-responsive" style="width: 300px;" /></a>
-      &nbsp;
-    </div>
-    <div class="col-md-9">
-<h4 class="red">RoboEXP: Action-Conditioned Scene Graph via Interactive Exploration for Robotic Manipulation</h4>
-<strong>Hanxiao Jiang</strong>,
-<a href=https://binghao-huang.github.io/ target="_blank">Binghao Huang</a>,
-<a href=https://warshallrho.github.io/ target="_blank">Ruihai Wu</a>,
-<a href=https://sg.linkedin.com/in/zhuoran-li-david target="_blank">Zhuoran Li</a>,
-<a href=https://www.gargshubham.com/ target="_blank">Shubham Garg</a>,
-<a href=https://www.amazon.science/author/hooshang-nayyeri target="_blank">Hooshang Nayyeri</a>,
-<a href=https://shenlong.web.illinois.edu/ target="_blank">Shenlong Wang</a>,
-<a href=https://yunzhuli.github.io/ target="_blank">Yunzhu Li</a><br>
-<a href= https://www.corl.org/ target="_blank">CoRL 2024</a>
-<br>
-<a href=https://jianghanxiao.github.io/roboexp-web/roboexp.pdf target="_blank">[Paper]</a>
-<a href=https://jianghanxiao.github.io/roboexp-web/ target="_blank">[Project]</a>
-<a href=https://github.com/Jianghanxiao/RoboEXP target="_blank">[Code]</a>
-<a href="https://github.com/Jianghanxiao/RoboEXP" target="_blank"> <img src="https://img.shields.io/github/stars/Jianghanxiao/RoboEXP?style=social&cacheSeconds=86400" alt="GitHub stars"></a>
-<br>
-<b><i style="color: red">Best Paper Nomination</i></b> at <b>ICRA 2024</b> Workshop on Vision-Language Models for Navigation and Manipulation <a href=https://vlmnm-workshop.github.io/ target="_blank">[Link]</a>
-    </div>
-  </div>
-  <hr>
-<br>
-<div class="row">
-    <div class="col-md-3">
-<a href="#"><img src=files/hssd.gif alt="image" class="img-responsive" style="width: 300px;" /></a>
-      &nbsp;
-    </div>
-    <div class="col-md-9">
-<h4 class="red">Habitat Synthetic Scenes Dataset (HSSD-200): An Analysis of 3D Scene Scale and Realism Tradeoffs for ObjectGoal Navigation</h4>
-<a href= https://mukulkhanna.github.io/ target="_blank">Mukul Khanna*</a>,
-<a href=https://sammaoys.github.io/ target="_blank">Yongsen Mao*</a>,
-<strong>Hanxiao Jiang</strong>,
-<a href=https://www.sanjayharesh.com/ target="_blank">Sanjay Haresh</a>,
-<a href= https://cs.stanford.edu/~bps/ target="_blank">Brennan Shacklett</a>,
-<a href= https://faculty.cc.gatech.edu/~dbatra/ target="_blank">Dhruv Batra</a>,
-<a href= https://www.linkedin.com/in/alexander-clegg-68336839/ target="_blank">Alexander Clegg</a>,
-<a href= https://www.linkedin.com/in/ericu/ target="_blank">Eric Undersander</a>,
-<a href=https://angelxuanchang.github.io/ target="_blank">Angel X. Chang</a>,
-<a href=https://msavva.github.io/ target="_blank">Manolis Savva</a><br>
-<a href=https://cvpr.thecvf.com/ target="_blank">CVPR 2024</a>
-<br>
-<a href=https://arxiv.org/abs/2306.11290 target="_blank">[Paper]</a>
-<a href=https://3dlg-hcvc.github.io/hssd/ target="_blank">[Project]</a>
-<a href=https://github.com/3dlg-hcvc/hssd/ target="_blank">[Code]</a>
-<a href="https://github.com/3dlg-hcvc/hssd" target="_blank"> <img src="https://img.shields.io/github/stars/3dlg-hcvc/hssd?style=social&cacheSeconds=86400" alt="GitHub stars"></a>
-    </div>
-  </div>
-  <hr>
-<br>
-<div class="row">
-    <div class="col-md-3">
-<a href="#"><img src=files/opdmulti.gif alt="image" class="img-responsive" style="width: 300px;" /></a>
-      &nbsp;
-    </div>
-    <div class="col-md-9">
-<h4 class="red">OPDMulti: Openable Part Detection for Multiple Objects</h4>
-<a href=https://sun-xh.github.io/ target="_blank">Xiaohao Sun*</a>,
-<strong>Hanxiao Jiang*</strong>,
-<a href=https://msavva.github.io/ target="_blank">Manolis Savva</a>,
-<a href=https://angelxuanchang.github.io/ target="_blank">Angel X. Chang</a><br>
-<a href=https://3dvconf.github.io/2024/ target="_blank">3DV 2024</a>, <b><i style="color: red">Oral Presentation</i></b>
-<br>
-<a href=https://arxiv.org/pdf/2303.14087.pdf target="_blank">[Paper]</a>
-<a href=https://3dlg-hcvc.github.io/OPDMulti/ target="_blank">[Project]</a>
-<a href=https://github.com/3dlg-hcvc/OPDMulti target="_blank">[Code]</a>
-<a href="https://github.com/3dlg-hcvc/OPDMulti" target="_blank"> <img src="https://img.shields.io/github/stars/3dlg-hcvc/OPDMulti?style=social&cacheSeconds=86400" alt="GitHub stars"></a>
-    </div>
-  </div>
-  <hr>
-<br>
-<div class="row">
-    <div class="col-md-3">
-<a href="#"><img src=files/multiscan.gif alt="image" class="img-responsive" style="width: 300px;" /></a>
-      &nbsp;
-    </div>
-    <div class="col-md-9">
-<h4 class="red">MultiScan: Scalable RGBD scanning for 3D environments with articulated objects</h4>
-<a href=https://sammaoys.github.io/ target="_blank">Yongsen Mao</a>,
-<a href=https://github.com/eamonn-zh target="_blank">Yiming Zhang</a>,
-<strong>Hanxiao Jiang</strong>,
-<a href=https://angelxuanchang.github.io/ target="_blank">Angel X. Chang</a>,
-<a href=https://msavva.github.io/ target="_blank">Manolis Savva</a><br>
-<a href=https://nips.cc/ target="_blank">NeurIPS 2022</a>
-<br>
-<a href=https://openreview.net/pdf?id=YxUdazpgweG target="_blank">[Paper]</a>
-<a href=https://3dlg-hcvc.github.io/multiscan/#/ target="_blank">[Project]</a>
-<a href=https://github.com/smartscenes/multiscan target="_blank">[Code]</a>
-<a href="https://github.com/smartscenes/multiscan" target="_blank"> <img src="https://img.shields.io/github/stars/smartscenes/multiscan?style=social&cacheSeconds=86400" alt="GitHub stars"></a>
-    </div>
-  </div>
-  <hr>
-<br>
-<div class="row">
-    <div class="col-md-3">
-<a href="#"><img src=files/opd.gif alt="image" class="img-responsive" style="width: 300px;" /></a>
-      &nbsp;
-    </div>
-    <div class="col-md-9">
-<h4 class="red">OPD: Single-view 3D Openable Part Detection</h4>
-<strong>Hanxiao Jiang</strong>,
-<a href=https://sammaoys.github.io/ target="_blank">Yongsen Mao</a>,
-<a href=https://msavva.github.io/ target="_blank">Manolis Savva</a>,
-<a href=https://angelxuanchang.github.io/ target="_blank">Angel X. Chang</a><br>
-<a href=https://eccv2022.ecva.net/ target="_blank">ECCV 2022</a>, <b><i style="color: red">Oral Presentation</i></b>
-<br>
-<a href=https://arxiv.org/pdf/2203.16421.pdf target="_blank">[Paper]</a>
-<a href=https://3dlg-hcvc.github.io/OPD/ target="_blank">[Project]</a>
-<a href=https://github.com/3dlg-hcvc/OPD target="_blank">[Code]</a>
-<a href="https://github.com/3dlg-hcvc/OPD" target="_blank"> <img src="https://img.shields.io/github/stars/3dlg-hcvc/OPD?style=social&cacheSeconds=86400" alt="GitHub stars"></a>
-    </div>
-  </div>
-  <hr>
-<br>
-<div class="row">
-    <div class="col-md-3">
-<a href="#"><img src=files/articulated-3DHOI.gif alt="image" class="img-responsive" style="width: 300px;" /></a>
-      &nbsp;
-    </div>
-    <div class="col-md-9">
-<h4 class="red">Articulated 3D Human-Object Interactions from RGB Videos: An Empirical Analysis of Approaches and Challenges</h4>
-<a href=https://www.sanjayharesh.com/ target="_blank">Sanjay Haresh</a>,
-<a href=https://sun-xh.github.io/ target="_blank">Xiaohao Sun</a>,
-<strong>Hanxiao Jiang</strong>,
-<a href=https://angelxuanchang.github.io/ target="_blank">Angel X. Chang</a>,
-<a href=https://msavva.github.io/ target="_blank">Manolis Savva</a><br>
-<a href=https://3dvconf.github.io/2022/ target="_blank">3DV 2022</a>
-<br>
-<a href=https://arxiv.org/abs/2209.05612 target="_blank">[Paper]</a>
-<a href=https://3dlg-hcvc.github.io/3dhoi/ target="_blank">[Project]</a>
-<a href=https://github.com/3dlg-hcvc/3dhoi target="_blank">[Code]</a>
-<a href="https://github.com/3dlg-hcvc/3dhoi" target="_blank"> <img src="https://img.shields.io/github/stars/3dlg-hcvc/3dhoi?style=social&cacheSeconds=86400" alt="GitHub stars"></a>
-    </div>
-  </div>
-  <hr>
-<br>
-<div class="row">
-    <div class="col-md-3">
-<a href="#"><img src=files/sapien.gif alt="image" class="img-responsive" style="width: 300px;" /></a>
-      &nbsp;
-    </div>
-    <div class="col-md-9">
-<h4 class="red">SAPIEN: A SimulAted Part-based Interactive ENvironment</h4>
-<a href=https://www.fbxiang.com/ target="_blank">Fanbo Xiang</a>,
-<a href=https://yzqin.github.io/ target="_blank">Yuzhe Qin</a>,
-<a href=https://cs.stanford.edu/~kaichun/ target="_blank">Kaichun Mo</a>,
-<a href=https://www.linkedin.com/in/yikuan-xia-4418a9170/ target="_blank">Yikuan Xia</a>,
-<a href=https://berniezhu.github.io/ target="_blank">Hao Zhu</a>,
-<a href=https://fangchenliu.github.io/ target="_blank">Fangchen Liu</a>,
-<a href=http://cseweb.ucsd.edu/~mil070/ target="_blank">Minghua Liu</a>,
-<strong>Hanxiao Jiang</strong>,
-Yifu Yuan,
-<a href=http://ai.stanford.edu/~hewang/ target="_blank">He Wang</a>,
-<a href=https://angelxuanchang.github.io/ target="_blank">Angel X. Chang</a>,
-<a href=http://geometry.stanford.edu/member/guibas/ target="_blank">Leonidas J. Guibas</a>,
-<a href=http://cseweb.ucsd.edu/~haosu/ target="_blank">Hao Su</a><br>
-<a href=http://cvpr2020.thecvf.com/ target="_blank">CVPR 2020</a>, <b><i style="color: red">Oral Presentation</i></b>
-<br>
-<a href=https://arxiv.org/abs/2003.08515 target="_blank">[Paper]</a>
-<a href=http://sapien.ucsd.edu/publication target="_blank">[Project]</a>
-    </div>
-  </div>
-  <hr>
-<br>
-<div class="row">
-    <div class="col-md-3">
-<a href="#"><img src=files/MAP.gif alt="image" class="img-responsive" style="width: 300px;" /></a>
-      &nbsp;
-    </div>
-    <div class="col-md-9">
-<h4 class="red">Motion Annotation Programs: A Scalable Approach to Annotating Kinematic Articulations in Large 3D Shape Collections</h4>
-<a href=https://xxh43.github.io/ target="_blank">Xianghao Xu</a>,
-<a href=http://davidcharatan.com/ target="_blank">David Charatan</a>,
-<a href=https://ca.linkedin.com/in/sonia-raychaudhuri target="_blank">Sonia Raychaudhuri</a>,
-<strong>Hanxiao Jiang</strong>,
-<a href=https://www.linkedin.com/in/mae-heitmann-770287118 target="_blank">Mae Heitmann</a>,
-<a href=http://www.vovakim.com/ target="_blank">Vladimir Kim</a>,
-<a href=https://www.cse.iitb.ac.in/~sidch/ target="_blank">Siddhartha Chaudhuri</a>,
-<a href=https://msavva.github.io/ target="_blank">Manolis Savva</a>,
-<a href=https://angelxuanchang.github.io/ target="_blank">Angel X. Chang</a>,
-<a href=https://dritchie.github.io/ target="_blank">Daniel Ritchie</a><br>
-<a href=http://3dv2020.dgcv.nii.ac.jp/ target="_blank">3DV 2020</a>
-<br>
-<a href=http://visual.cs.brown.edu/projects/articulations-webpage/articulations_3dv2020.pdf target="_blank">[Paper]</a>
-<a href=https://visual.cs.brown.edu/articulations target="_blank">[Project]</a>
-    </div>
-  </div>
-  <hr>
-<br>
-<div class="row">
-    <div class="col-md-3">
-<a href="#"><img src=files/color_constancy.jpg alt="image" class="img-responsive" style="width: 300px;" /></a>
-      &nbsp;
-    </div>
-    <div class="col-md-9">
-<h4 class="red">Evaluating Colour Constancy on the new MIST dataset of Multi-Illuminant Scenes</h4>
-<a href=https://www.haoxp.xyz/#/ target="_blank">Xiangpeng Hao</a>,
-<a href=https://www2.cs.sfu.ca/~funt/ target="_blank">Brian Funt</a>,
-<strong>Hanxiao Jiang</strong><br>
-<a href=https://www.imaging.org/site/IST/Conferences/Color_and_Imaging/CIC27__2019_/IST/Conferences/CIC/CIC2019/CIC27_Home.aspx?hkey=0fb3eb64-061f-4609-8d3c-7b8e6c0c4b90 target="_blank">CIC 2019</a>, <b><i style="color: red">Oral Presentation</i></b>
-<br>
-<a href=https://www2.cs.sfu.ca/~funt/Hao+Funt_MIST_CIC27_2019.pdf target="_blank">[Paper]</a>
-    </div>
-  </div>
-  <hr>
-<br>
-
-        </div>
+      <div class="hero-updates">
+<section class="news-block" aria-labelledby="news-title">
+  <header class="section-heading news-heading">
+    <span class="section-index" aria-hidden="true">Updates /</span>
+    <h2 id="news-title">News</h2>
+  </header>
+<aside class="community-note">
+  <div class="community-note__meta"><span></span>Community</div>
+  <div class="community-note__copy">I commit 1–2 hours per week to host pro bono office hours and provide guidance and mentorship for students. Please check <a href="contact.html">here</a> for more details.</div>
+</aside>
+  <ol class="news-list news-list--preview">
+    <li class="news-item">
+      <time class="news-date" datetime="2026-06">
+        <span class="news-month">Jun</span><span class="news-year-inline">2026</span>
+      </time>
+      <div class="news-copy">Boba and Deform360 got accepted to <a href="https://eccv.ecva.net/">ECCV 2026</a>.</div>
+    </li>
+    <li class="news-item">
+      <time class="news-date" datetime="2026-01">
+        <span class="news-month">Jan</span><span class="news-year-inline">2026</span>
+      </time>
+      <div class="news-copy"><a href="https://real2sim-eval.github.io/">Real2Sim-Eval</a> got accepted to <a href="https://2026.ieee-icra.org/">ICRA 2026</a>.</div>
+    </li>
+    <li class="news-item">
+      <time class="news-date" datetime="2025-11">
+        <span class="news-month">Nov</span><span class="news-year-inline">2025</span>
+      </time>
+      <div class="news-copy">I will join <a href="https://research.nvidia.com/labs/lpr/">Nvidia Research</a> in Redmond as a Research Intern in Robotic Perception for 2026 summer.</div>
+    </li>
+    <li class="news-item">
+      <time class="news-date" datetime="2025-11">
+        <span class="news-month">Nov</span><span class="news-year-inline">2025</span>
+      </time>
+      <div class="news-copy"><a href="https://3dlg-hcvc.github.io/s2o/">S2O</a> got accepted to <a href="https://wacv.thecvf.com/">WACV 2026</a>.</div>
+    </li>
+    <li class="news-item">
+      <time class="news-date" datetime="2025-06">
+        <span class="news-month">Jun</span><span class="news-year-inline">2025</span>
+      </time>
+      <div class="news-copy"><a href="https://jianghanxiao.github.io/phystwin-web/">PhysTwin</a> got accepted to <a href="https://iccv.thecvf.com/">ICCV 2025</a>.</div>
+    </li>
+  </ol>
+  <a class="text-link news-more" href="news.html">All news <span aria-hidden="true">↗</span></a>
+</section>
       </div>
+    </section>
+
+    <div class="main-content">
+<section class="publications-section" aria-labelledby="publications-title">
+  <header class="section-heading publications-heading">
+    <span class="section-index" aria-hidden="true">Research /</span>
+    <h2 id="publications-title">Preprints &amp; Publications</h2>
+  </header>
+
+  <div class="publication-list">
+<article class="publication-card">
+  <div class="publication-media">
+<img src="files/phystwin-eval.gif" alt="Real-to-Sim Robot Policy Evaluation with Gaussian Splatting Simulation of Soft-Body Interactions project preview" class="publication-image" width="600" height="360" loading="lazy" decoding="async" />
+  </div>
+  <div class="publication-copy">
+<h3 class="publication-title">Real-to-Sim Robot Policy Evaluation with Gaussian Splatting Simulation of Soft-Body Interactions</h3>
+<p class="publication-authors"><a href="https://kywind.github.io/" target="_blank" rel="noopener noreferrer">Kaifeng Zhang*</a>, <a href="https://shuosha.github.io/" target="_blank" rel="noopener noreferrer">Shuo Sha*</a>, <strong>Hanxiao Jiang</strong>, <a href="https://scholar.google.com/citations?user=xokChDMAAAAJ&amp;hl=en" target="_blank" rel="noopener noreferrer">Matthew Loper</a>, <a href="https://sites.google.com/nyu.edu/jay-hyunjong-song" target="_blank" rel="noopener noreferrer">Hyunjong Song</a>, <a href="https://guangyancai.me/" target="_blank" rel="noopener noreferrer">Guangyan Cai</a>, <a href="https://drzhuoxu.github.io/" target="_blank" rel="noopener noreferrer">Zhuo Xu</a>, <a href="https://scholar.google.com/citations?user=-MaXMRAAAAAJ&amp;hl=en" target="_blank" rel="noopener noreferrer">Xiaochen Hu</a>, <a href="https://www.cs.columbia.edu/~cxz/" target="_blank" rel="noopener noreferrer">Changxi Zheng</a>, <a href="https://yunzhuli.github.io/" target="_blank" rel="noopener noreferrer">Yunzhu Li</a></p>
+<div class="publication-meta">
+<a class="publication-venue" href="https://2026.ieee-icra.org/" target="_blank" rel="noopener noreferrer">ICRA 2026</a>
+</div>
+<div class="publication-links">
+<a class="publication-action" href="https://arxiv.org/pdf/2511.04665" target="_blank" rel="noopener noreferrer">Paper <span aria-hidden="true">↗</span></a>
+<a class="publication-action" href="https://real2sim-eval.github.io/" target="_blank" rel="noopener noreferrer">Project <span aria-hidden="true">↗</span></a>
+<a class="publication-action" href="https://github.com/kywind/real2sim-eval" target="_blank" rel="noopener noreferrer">Code <span aria-hidden="true">↗</span></a>
+<a class="github-stars-link" href="https://github.com/kywind/real2sim-eval" target="_blank" rel="noopener noreferrer" aria-label="View GitHub stars"><img class="github-stars" src="https://img.shields.io/github/stars/kywind/real2sim-eval?style=social&amp;cacheSeconds=86400" alt="GitHub stars" loading="lazy" /></a>
+</div>
+  </div>
+</article>
+<article class="publication-card">
+  <div class="publication-media">
+<img src="files/phystwin.gif" alt="PhysTwin: Physics-Informed Reconstruction and Simulation of Deformable Objects from Videos project preview" class="publication-image" width="600" height="360" loading="lazy" decoding="async" />
+  </div>
+  <div class="publication-copy">
+<h3 class="publication-title">PhysTwin: Physics-Informed Reconstruction and Simulation of Deformable Objects from Videos</h3>
+<p class="publication-authors"><strong>Hanxiao Jiang</strong>, <a href="https://haoyuhsu.github.io/" target="_blank" rel="noopener noreferrer">Hao-Yu Hsu</a>, <a href="https://kywind.github.io/" target="_blank" rel="noopener noreferrer">Kaifeng Zhang</a>, <a href="https://www.linkedin.com/in/hnyu/" target="_blank" rel="noopener noreferrer">Hsin-Ni Yu</a>, <a href="https://shenlong.web.illinois.edu/" target="_blank" rel="noopener noreferrer">Shenlong Wang</a>, <a href="https://yunzhuli.github.io/" target="_blank" rel="noopener noreferrer">Yunzhu Li</a></p>
+<div class="publication-meta">
+<a class="publication-venue" href="https://iccv.thecvf.com/" target="_blank" rel="noopener noreferrer">ICCV 2025</a>
+</div>
+<div class="publication-links">
+<a class="publication-action" href="https://jianghanxiao.github.io/phystwin-web/phystwin.pdf" target="_blank" rel="noopener noreferrer">Paper <span aria-hidden="true">↗</span></a>
+<a class="publication-action" href="https://jianghanxiao.github.io/phystwin-web/" target="_blank" rel="noopener noreferrer">Project <span aria-hidden="true">↗</span></a>
+<a class="publication-action" href="https://github.com/Jianghanxiao/PhysTwin" target="_blank" rel="noopener noreferrer">Code <span aria-hidden="true">↗</span></a>
+<a class="github-stars-link" href="https://github.com/jianghanxiao/PhysTwin" target="_blank" rel="noopener noreferrer" aria-label="View GitHub stars"><img class="github-stars" src="https://img.shields.io/github/stars/jianghanxiao/PhysTwin?style=social&amp;cacheSeconds=86400" alt="GitHub stars" loading="lazy" /></a>
+</div>
+<div class="publication-extra"><b><i style="color: red">The work I love most — code maintained for the long term.</i></b></a></div>
+  </div>
+</article>
+<article class="publication-card">
+  <div class="publication-media">
+<img src="files/physgen3d.gif" alt="PhysGen3D: Crafting a Miniature Interactive World from a Single Image project preview" class="publication-image" width="600" height="360" loading="lazy" decoding="async" />
+  </div>
+  <div class="publication-copy">
+<h3 class="publication-title">PhysGen3D: Crafting a Miniature Interactive World from a Single Image</h3>
+<p class="publication-authors"><a href="https://github.com/by-luckk" target="_blank" rel="noopener noreferrer">Boyuan Chen</a>, <strong>Hanxiao Jiang</strong>, <a href="https://stevenlsw.github.io/" target="_blank" rel="noopener noreferrer">Shaowei Liu</a>, <a href="https://saurabhg.web.illinois.edu/" target="_blank" rel="noopener noreferrer">Saurabh Gupta</a>, <a href="https://yunzhuli.github.io/" target="_blank" rel="noopener noreferrer">Yunzhu Li</a>, <a href="https://sites.google.com/view/fromandto" target="_blank" rel="noopener noreferrer">Hao Zhao</a>, <a href="https://shenlong.web.illinois.edu/" target="_blank" rel="noopener noreferrer">Shenlong Wang</a></p>
+<div class="publication-meta">
+<a class="publication-venue" href="https://cvpr.thecvf.com/" target="_blank" rel="noopener noreferrer">CVPR 2025</a>
+</div>
+<div class="publication-links">
+<a class="publication-action" href="https://arxiv.org/abs/2503.20746" target="_blank" rel="noopener noreferrer">Paper <span aria-hidden="true">↗</span></a>
+<a class="publication-action" href="https://by-luckk.github.io/PhysGen3D/" target="_blank" rel="noopener noreferrer">Project <span aria-hidden="true">↗</span></a>
+<a class="publication-action" href="https://github.com/by-luckk/PhysGen3D" target="_blank" rel="noopener noreferrer">Code <span aria-hidden="true">↗</span></a>
+<a class="github-stars-link" href="https://github.com/by-luckk/PhysGen3D" target="_blank" rel="noopener noreferrer" aria-label="View GitHub stars"><img class="github-stars" src="https://img.shields.io/github/stars/by-luckk/PhysGen3D?style=social&amp;cacheSeconds=86400" alt="GitHub stars" loading="lazy" /></a>
+</div>
+  </div>
+</article>
+<article class="publication-card">
+  <div class="publication-media">
+<img src="files/s2o.gif" alt="S2O: Static to Openable Enhancement for Articulated 3D Objects project preview" class="publication-image" width="600" height="360" loading="lazy" decoding="async" />
+  </div>
+  <div class="publication-copy">
+<h3 class="publication-title">S2O: Static to Openable Enhancement for Articulated 3D Objects</h3>
+<p class="publication-authors"><a href="https://diliash.github.io/" target="_blank" rel="noopener noreferrer">Denys Iliash</a>, <strong>Hanxiao Jiang</strong>, <a href="https://github.com/eamonn-zh" target="_blank" rel="noopener noreferrer">Yiming Zhang</a>, <a href="https://msavva.github.io/" target="_blank" rel="noopener noreferrer">Manolis Savva</a>, <a href="https://angelxuanchang.github.io/" target="_blank" rel="noopener noreferrer">Angel X. Chang</a></p>
+<div class="publication-meta">
+<a class="publication-venue" href="https://wacv.thecvf.com/" target="_blank" rel="noopener noreferrer">WACV 2026</a>
+</div>
+<div class="publication-links">
+<a class="publication-action" href="https://arxiv.org/abs/2409.18896" target="_blank" rel="noopener noreferrer">Paper <span aria-hidden="true">↗</span></a>
+<a class="publication-action" href="https://3dlg-hcvc.github.io/s2o/" target="_blank" rel="noopener noreferrer">Project <span aria-hidden="true">↗</span></a>
+<a class="publication-action" href="https://github.com/3dlg-hcvc/s2o" target="_blank" rel="noopener noreferrer">Code <span aria-hidden="true">↗</span></a>
+<a class="github-stars-link" href="https://github.com/3dlg-hcvc/s2o" target="_blank" rel="noopener noreferrer" aria-label="View GitHub stars"><img class="github-stars" src="https://img.shields.io/github/stars/3dlg-hcvc/s2o?style=social&amp;cacheSeconds=86400" alt="GitHub stars" loading="lazy" /></a>
+</div>
+  </div>
+</article>
+<article class="publication-card">
+  <div class="publication-media">
+<img src="files/roboexp.gif" alt="RoboEXP: Action-Conditioned Scene Graph via Interactive Exploration for Robotic Manipulation project preview" class="publication-image" width="600" height="360" loading="lazy" decoding="async" />
+  </div>
+  <div class="publication-copy">
+<h3 class="publication-title">RoboEXP: Action-Conditioned Scene Graph via Interactive Exploration for Robotic Manipulation</h3>
+<p class="publication-authors"><strong>Hanxiao Jiang</strong>, <a href="https://binghao-huang.github.io/" target="_blank" rel="noopener noreferrer">Binghao Huang</a>, <a href="https://warshallrho.github.io/" target="_blank" rel="noopener noreferrer">Ruihai Wu</a>, <a href="https://sg.linkedin.com/in/zhuoran-li-david" target="_blank" rel="noopener noreferrer">Zhuoran Li</a>, <a href="https://www.gargshubham.com/" target="_blank" rel="noopener noreferrer">Shubham Garg</a>, <a href="https://www.amazon.science/author/hooshang-nayyeri" target="_blank" rel="noopener noreferrer">Hooshang Nayyeri</a>, <a href="https://shenlong.web.illinois.edu/" target="_blank" rel="noopener noreferrer">Shenlong Wang</a>, <a href="https://yunzhuli.github.io/" target="_blank" rel="noopener noreferrer">Yunzhu Li</a></p>
+<div class="publication-meta">
+<a class="publication-venue" href="https://www.corl.org/" target="_blank" rel="noopener noreferrer">CoRL 2024</a>
+</div>
+<div class="publication-links">
+<a class="publication-action" href="https://jianghanxiao.github.io/roboexp-web/roboexp.pdf" target="_blank" rel="noopener noreferrer">Paper <span aria-hidden="true">↗</span></a>
+<a class="publication-action" href="https://jianghanxiao.github.io/roboexp-web/" target="_blank" rel="noopener noreferrer">Project <span aria-hidden="true">↗</span></a>
+<a class="publication-action" href="https://github.com/Jianghanxiao/RoboEXP" target="_blank" rel="noopener noreferrer">Code <span aria-hidden="true">↗</span></a>
+<a class="github-stars-link" href="https://github.com/Jianghanxiao/RoboEXP" target="_blank" rel="noopener noreferrer" aria-label="View GitHub stars"><img class="github-stars" src="https://img.shields.io/github/stars/Jianghanxiao/RoboEXP?style=social&amp;cacheSeconds=86400" alt="GitHub stars" loading="lazy" /></a>
+</div>
+<div class="publication-extra"><b><i style="color: red">Best Paper Nomination</i></b> at <b>ICRA 2024</b> Workshop on Vision-Language Models for Navigation and Manipulation <a href=https://vlmnm-workshop.github.io/ target="_blank">[Link]</a></div>
+  </div>
+</article>
+<article class="publication-card">
+  <div class="publication-media">
+<img src="files/hssd.gif" alt="Habitat Synthetic Scenes Dataset (HSSD-200): An Analysis of 3D Scene Scale and Realism Tradeoffs for ObjectGoal Navigation project preview" class="publication-image" width="600" height="360" loading="lazy" decoding="async" />
+  </div>
+  <div class="publication-copy">
+<h3 class="publication-title">Habitat Synthetic Scenes Dataset (HSSD-200): An Analysis of 3D Scene Scale and Realism Tradeoffs for ObjectGoal Navigation</h3>
+<p class="publication-authors"><a href="https://mukulkhanna.github.io/" target="_blank" rel="noopener noreferrer">Mukul Khanna*</a>, <a href="https://sammaoys.github.io/" target="_blank" rel="noopener noreferrer">Yongsen Mao*</a>, <strong>Hanxiao Jiang</strong>, <a href="https://www.sanjayharesh.com/" target="_blank" rel="noopener noreferrer">Sanjay Haresh</a>, <a href="https://cs.stanford.edu/~bps/" target="_blank" rel="noopener noreferrer">Brennan Shacklett</a>, <a href="https://faculty.cc.gatech.edu/~dbatra/" target="_blank" rel="noopener noreferrer">Dhruv Batra</a>, <a href="https://www.linkedin.com/in/alexander-clegg-68336839/" target="_blank" rel="noopener noreferrer">Alexander Clegg</a>, <a href="https://www.linkedin.com/in/ericu/" target="_blank" rel="noopener noreferrer">Eric Undersander</a>, <a href="https://angelxuanchang.github.io/" target="_blank" rel="noopener noreferrer">Angel X. Chang</a>, <a href="https://msavva.github.io/" target="_blank" rel="noopener noreferrer">Manolis Savva</a></p>
+<div class="publication-meta">
+<a class="publication-venue" href="https://cvpr.thecvf.com/" target="_blank" rel="noopener noreferrer">CVPR 2024</a>
+</div>
+<div class="publication-links">
+<a class="publication-action" href="https://arxiv.org/abs/2306.11290" target="_blank" rel="noopener noreferrer">Paper <span aria-hidden="true">↗</span></a>
+<a class="publication-action" href="https://3dlg-hcvc.github.io/hssd/" target="_blank" rel="noopener noreferrer">Project <span aria-hidden="true">↗</span></a>
+<a class="publication-action" href="https://github.com/3dlg-hcvc/hssd/" target="_blank" rel="noopener noreferrer">Code <span aria-hidden="true">↗</span></a>
+<a class="github-stars-link" href="https://github.com/3dlg-hcvc/hssd" target="_blank" rel="noopener noreferrer" aria-label="View GitHub stars"><img class="github-stars" src="https://img.shields.io/github/stars/3dlg-hcvc/hssd?style=social&amp;cacheSeconds=86400" alt="GitHub stars" loading="lazy" /></a>
+</div>
+  </div>
+</article>
+<article class="publication-card">
+  <div class="publication-media">
+<img src="files/opdmulti.gif" alt="OPDMulti: Openable Part Detection for Multiple Objects project preview" class="publication-image" width="600" height="360" loading="lazy" decoding="async" />
+  </div>
+  <div class="publication-copy">
+<h3 class="publication-title">OPDMulti: Openable Part Detection for Multiple Objects</h3>
+<p class="publication-authors"><a href="https://sun-xh.github.io/" target="_blank" rel="noopener noreferrer">Xiaohao Sun*</a>, <strong>Hanxiao Jiang*</strong>, <a href="https://msavva.github.io/" target="_blank" rel="noopener noreferrer">Manolis Savva</a>, <a href="https://angelxuanchang.github.io/" target="_blank" rel="noopener noreferrer">Angel X. Chang</a></p>
+<div class="publication-meta">
+<a class="publication-venue" href="https://3dvconf.github.io/2024/" target="_blank" rel="noopener noreferrer">3DV 2024</a>
+<span class="publication-highlight">Oral Presentation</span>
+</div>
+<div class="publication-links">
+<a class="publication-action" href="https://arxiv.org/pdf/2303.14087.pdf" target="_blank" rel="noopener noreferrer">Paper <span aria-hidden="true">↗</span></a>
+<a class="publication-action" href="https://3dlg-hcvc.github.io/OPDMulti/" target="_blank" rel="noopener noreferrer">Project <span aria-hidden="true">↗</span></a>
+<a class="publication-action" href="https://github.com/3dlg-hcvc/OPDMulti" target="_blank" rel="noopener noreferrer">Code <span aria-hidden="true">↗</span></a>
+<a class="github-stars-link" href="https://github.com/3dlg-hcvc/OPDMulti" target="_blank" rel="noopener noreferrer" aria-label="View GitHub stars"><img class="github-stars" src="https://img.shields.io/github/stars/3dlg-hcvc/OPDMulti?style=social&amp;cacheSeconds=86400" alt="GitHub stars" loading="lazy" /></a>
+</div>
+  </div>
+</article>
+<article class="publication-card">
+  <div class="publication-media">
+<img src="files/multiscan.gif" alt="MultiScan: Scalable RGBD scanning for 3D environments with articulated objects project preview" class="publication-image" width="600" height="360" loading="lazy" decoding="async" />
+  </div>
+  <div class="publication-copy">
+<h3 class="publication-title">MultiScan: Scalable RGBD scanning for 3D environments with articulated objects</h3>
+<p class="publication-authors"><a href="https://sammaoys.github.io/" target="_blank" rel="noopener noreferrer">Yongsen Mao</a>, <a href="https://github.com/eamonn-zh" target="_blank" rel="noopener noreferrer">Yiming Zhang</a>, <strong>Hanxiao Jiang</strong>, <a href="https://angelxuanchang.github.io/" target="_blank" rel="noopener noreferrer">Angel X. Chang</a>, <a href="https://msavva.github.io/" target="_blank" rel="noopener noreferrer">Manolis Savva</a></p>
+<div class="publication-meta">
+<a class="publication-venue" href="https://nips.cc/" target="_blank" rel="noopener noreferrer">NeurIPS 2022</a>
+</div>
+<div class="publication-links">
+<a class="publication-action" href="https://openreview.net/pdf?id=YxUdazpgweG" target="_blank" rel="noopener noreferrer">Paper <span aria-hidden="true">↗</span></a>
+<a class="publication-action" href="https://3dlg-hcvc.github.io/multiscan/#/" target="_blank" rel="noopener noreferrer">Project <span aria-hidden="true">↗</span></a>
+<a class="publication-action" href="https://github.com/smartscenes/multiscan" target="_blank" rel="noopener noreferrer">Code <span aria-hidden="true">↗</span></a>
+<a class="github-stars-link" href="https://github.com/smartscenes/multiscan" target="_blank" rel="noopener noreferrer" aria-label="View GitHub stars"><img class="github-stars" src="https://img.shields.io/github/stars/smartscenes/multiscan?style=social&amp;cacheSeconds=86400" alt="GitHub stars" loading="lazy" /></a>
+</div>
+  </div>
+</article>
+<article class="publication-card">
+  <div class="publication-media">
+<img src="files/opd.gif" alt="OPD: Single-view 3D Openable Part Detection project preview" class="publication-image" width="600" height="360" loading="lazy" decoding="async" />
+  </div>
+  <div class="publication-copy">
+<h3 class="publication-title">OPD: Single-view 3D Openable Part Detection</h3>
+<p class="publication-authors"><strong>Hanxiao Jiang</strong>, <a href="https://sammaoys.github.io/" target="_blank" rel="noopener noreferrer">Yongsen Mao</a>, <a href="https://msavva.github.io/" target="_blank" rel="noopener noreferrer">Manolis Savva</a>, <a href="https://angelxuanchang.github.io/" target="_blank" rel="noopener noreferrer">Angel X. Chang</a></p>
+<div class="publication-meta">
+<a class="publication-venue" href="https://eccv2022.ecva.net/" target="_blank" rel="noopener noreferrer">ECCV 2022</a>
+<span class="publication-highlight">Oral Presentation</span>
+</div>
+<div class="publication-links">
+<a class="publication-action" href="https://arxiv.org/pdf/2203.16421.pdf" target="_blank" rel="noopener noreferrer">Paper <span aria-hidden="true">↗</span></a>
+<a class="publication-action" href="https://3dlg-hcvc.github.io/OPD/" target="_blank" rel="noopener noreferrer">Project <span aria-hidden="true">↗</span></a>
+<a class="publication-action" href="https://github.com/3dlg-hcvc/OPD" target="_blank" rel="noopener noreferrer">Code <span aria-hidden="true">↗</span></a>
+<a class="github-stars-link" href="https://github.com/3dlg-hcvc/OPD" target="_blank" rel="noopener noreferrer" aria-label="View GitHub stars"><img class="github-stars" src="https://img.shields.io/github/stars/3dlg-hcvc/OPD?style=social&amp;cacheSeconds=86400" alt="GitHub stars" loading="lazy" /></a>
+</div>
+  </div>
+</article>
+<article class="publication-card">
+  <div class="publication-media">
+<img src="files/articulated-3DHOI.gif" alt="Articulated 3D Human-Object Interactions from RGB Videos: An Empirical Analysis of Approaches and Challenges project preview" class="publication-image" width="600" height="360" loading="lazy" decoding="async" />
+  </div>
+  <div class="publication-copy">
+<h3 class="publication-title">Articulated 3D Human-Object Interactions from RGB Videos: An Empirical Analysis of Approaches and Challenges</h3>
+<p class="publication-authors"><a href="https://www.sanjayharesh.com/" target="_blank" rel="noopener noreferrer">Sanjay Haresh</a>, <a href="https://sun-xh.github.io/" target="_blank" rel="noopener noreferrer">Xiaohao Sun</a>, <strong>Hanxiao Jiang</strong>, <a href="https://angelxuanchang.github.io/" target="_blank" rel="noopener noreferrer">Angel X. Chang</a>, <a href="https://msavva.github.io/" target="_blank" rel="noopener noreferrer">Manolis Savva</a></p>
+<div class="publication-meta">
+<a class="publication-venue" href="https://3dvconf.github.io/2022/" target="_blank" rel="noopener noreferrer">3DV 2022</a>
+</div>
+<div class="publication-links">
+<a class="publication-action" href="https://arxiv.org/abs/2209.05612" target="_blank" rel="noopener noreferrer">Paper <span aria-hidden="true">↗</span></a>
+<a class="publication-action" href="https://3dlg-hcvc.github.io/3dhoi/" target="_blank" rel="noopener noreferrer">Project <span aria-hidden="true">↗</span></a>
+<a class="publication-action" href="https://github.com/3dlg-hcvc/3dhoi" target="_blank" rel="noopener noreferrer">Code <span aria-hidden="true">↗</span></a>
+<a class="github-stars-link" href="https://github.com/3dlg-hcvc/3dhoi" target="_blank" rel="noopener noreferrer" aria-label="View GitHub stars"><img class="github-stars" src="https://img.shields.io/github/stars/3dlg-hcvc/3dhoi?style=social&amp;cacheSeconds=86400" alt="GitHub stars" loading="lazy" /></a>
+</div>
+  </div>
+</article>
+<article class="publication-card">
+  <div class="publication-media">
+<img src="files/sapien.gif" alt="SAPIEN: A SimulAted Part-based Interactive ENvironment project preview" class="publication-image" width="600" height="360" loading="lazy" decoding="async" />
+  </div>
+  <div class="publication-copy">
+<h3 class="publication-title">SAPIEN: A SimulAted Part-based Interactive ENvironment</h3>
+<p class="publication-authors"><a href="https://www.fbxiang.com/" target="_blank" rel="noopener noreferrer">Fanbo Xiang</a>, <a href="https://yzqin.github.io/" target="_blank" rel="noopener noreferrer">Yuzhe Qin</a>, <a href="https://cs.stanford.edu/~kaichun/" target="_blank" rel="noopener noreferrer">Kaichun Mo</a>, <a href="https://www.linkedin.com/in/yikuan-xia-4418a9170/" target="_blank" rel="noopener noreferrer">Yikuan Xia</a>, <a href="https://berniezhu.github.io/" target="_blank" rel="noopener noreferrer">Hao Zhu</a>, <a href="https://fangchenliu.github.io/" target="_blank" rel="noopener noreferrer">Fangchen Liu</a>, <a href="http://cseweb.ucsd.edu/~mil070/" target="_blank" rel="noopener noreferrer">Minghua Liu</a>, <strong>Hanxiao Jiang</strong>, Yifu Yuan, <a href="http://ai.stanford.edu/~hewang/" target="_blank" rel="noopener noreferrer">He Wang</a>, <a href="https://angelxuanchang.github.io/" target="_blank" rel="noopener noreferrer">Angel X. Chang</a>, <a href="http://geometry.stanford.edu/member/guibas/" target="_blank" rel="noopener noreferrer">Leonidas J. Guibas</a>, <a href="http://cseweb.ucsd.edu/~haosu/" target="_blank" rel="noopener noreferrer">Hao Su</a></p>
+<div class="publication-meta">
+<a class="publication-venue" href="http://cvpr2020.thecvf.com/" target="_blank" rel="noopener noreferrer">CVPR 2020</a>
+<span class="publication-highlight">Oral Presentation</span>
+</div>
+<div class="publication-links">
+<a class="publication-action" href="https://arxiv.org/abs/2003.08515" target="_blank" rel="noopener noreferrer">Paper <span aria-hidden="true">↗</span></a>
+<a class="publication-action" href="http://sapien.ucsd.edu/publication" target="_blank" rel="noopener noreferrer">Project <span aria-hidden="true">↗</span></a>
+</div>
+  </div>
+</article>
+<article class="publication-card">
+  <div class="publication-media">
+<img src="files/MAP.gif" alt="Motion Annotation Programs: A Scalable Approach to Annotating Kinematic Articulations in Large 3D Shape Collections project preview" class="publication-image" width="600" height="360" loading="lazy" decoding="async" />
+  </div>
+  <div class="publication-copy">
+<h3 class="publication-title">Motion Annotation Programs: A Scalable Approach to Annotating Kinematic Articulations in Large 3D Shape Collections</h3>
+<p class="publication-authors"><a href="https://xxh43.github.io/" target="_blank" rel="noopener noreferrer">Xianghao Xu</a>, <a href="http://davidcharatan.com/" target="_blank" rel="noopener noreferrer">David Charatan</a>, <a href="https://ca.linkedin.com/in/sonia-raychaudhuri" target="_blank" rel="noopener noreferrer">Sonia Raychaudhuri</a>, <strong>Hanxiao Jiang</strong>, <a href="https://www.linkedin.com/in/mae-heitmann-770287118" target="_blank" rel="noopener noreferrer">Mae Heitmann</a>, <a href="http://www.vovakim.com/" target="_blank" rel="noopener noreferrer">Vladimir Kim</a>, <a href="https://www.cse.iitb.ac.in/~sidch/" target="_blank" rel="noopener noreferrer">Siddhartha Chaudhuri</a>, <a href="https://msavva.github.io/" target="_blank" rel="noopener noreferrer">Manolis Savva</a>, <a href="https://angelxuanchang.github.io/" target="_blank" rel="noopener noreferrer">Angel X. Chang</a>, <a href="https://dritchie.github.io/" target="_blank" rel="noopener noreferrer">Daniel Ritchie</a></p>
+<div class="publication-meta">
+<a class="publication-venue" href="http://3dv2020.dgcv.nii.ac.jp/" target="_blank" rel="noopener noreferrer">3DV 2020</a>
+</div>
+<div class="publication-links">
+<a class="publication-action" href="http://visual.cs.brown.edu/projects/articulations-webpage/articulations_3dv2020.pdf" target="_blank" rel="noopener noreferrer">Paper <span aria-hidden="true">↗</span></a>
+<a class="publication-action" href="https://visual.cs.brown.edu/articulations" target="_blank" rel="noopener noreferrer">Project <span aria-hidden="true">↗</span></a>
+</div>
+  </div>
+</article>
+<article class="publication-card">
+  <div class="publication-media">
+<img src="files/color_constancy.jpg" alt="Evaluating Colour Constancy on the new MIST dataset of Multi-Illuminant Scenes project preview" class="publication-image" width="600" height="360" loading="lazy" decoding="async" />
+  </div>
+  <div class="publication-copy">
+<h3 class="publication-title">Evaluating Colour Constancy on the new MIST dataset of Multi-Illuminant Scenes</h3>
+<p class="publication-authors"><a href="https://www.haoxp.xyz/#/" target="_blank" rel="noopener noreferrer">Xiangpeng Hao</a>, <a href="https://www2.cs.sfu.ca/~funt/" target="_blank" rel="noopener noreferrer">Brian Funt</a>, <strong>Hanxiao Jiang</strong></p>
+<div class="publication-meta">
+<a class="publication-venue" href="https://www.imaging.org/site/IST/Conferences/Color_and_Imaging/CIC27__2019_/IST/Conferences/CIC/CIC2019/CIC27_Home.aspx?hkey=0fb3eb64-061f-4609-8d3c-7b8e6c0c4b90" target="_blank" rel="noopener noreferrer">CIC 2019</a>
+<span class="publication-highlight">Oral Presentation</span>
+</div>
+<div class="publication-links">
+<a class="publication-action" href="https://www2.cs.sfu.ca/~funt/Hao+Funt_MIST_CIC27_2019.pdf" target="_blank" rel="noopener noreferrer">Paper <span aria-hidden="true">↗</span></a>
+</div>
+  </div>
+</article>
+  </div>
+</section>
     </div>
-  </div>
-  </div>
-  </section>
-  <!-- <footer>
-    <p class="pull-right">
-      Last updated at 2020-10-07T10:56:51.321Z
-    </p>
-  </footer> -->
-  </div><!-- /container -->
-  
+  </main>
+
+  <footer class="site-footer">
+    <div class="container site-footer-inner">
+      <p>Hanxiao Jiang <span aria-hidden="true">·</span> 蒋含啸</p>
+      <a href="#top">Back to top <span aria-hidden="true">↑</span></a>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <script src="/scripts/bootstrap.min.js"></script>
+  <script src="/scripts/script.js"></script>
+  <script src="/scripts/elastic-field.js"></script>
+
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-162763877-1"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-
     gtag('config', 'UA-162763877-1');
   </script>
-
 </body>
 
 </html>
