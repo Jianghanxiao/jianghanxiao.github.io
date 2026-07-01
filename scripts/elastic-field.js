@@ -2,7 +2,9 @@
   'use strict';
 
   var canvas = document.getElementById('elastic-field');
-  var readout = document.querySelector('.field-readout');
+  var control = document.querySelector('.field-control');
+  var modulusSlider = document.getElementById('elastic-modulus');
+  var modulusOutput = document.getElementById('elastic-modulus-output');
 
   if (!canvas) {
     return;
@@ -11,8 +13,8 @@
   var context = canvas.getContext && canvas.getContext('2d', { alpha: true });
   if (!context) {
     canvas.hidden = true;
-    if (readout) {
-      readout.hidden = true;
+    if (control) {
+      control.hidden = true;
     }
     return;
   }
@@ -28,6 +30,7 @@
   var columns = 0;
   var rows = 0;
   var fieldSize = 0;
+  var waveStiffness = 0.085;
   var displacement;
   var velocity;
   var nextDisplacement;
@@ -42,7 +45,7 @@
   var lastPointer = null;
   var lastReadoutTime = 0;
   var contourPoints = new Float32Array(8);
-  var readoutValue = readout && readout.querySelector('.field-readout__value');
+  var responseValue = control && control.querySelector('.field-control__value');
 
   var contourLevels = [
     { value: -0.06, color: 'rgba(140, 21, 21, 0.24)', width: 1.05 },
@@ -68,8 +71,8 @@
 
   function setFieldVisibility(disabled) {
     canvas.hidden = disabled;
-    if (readout) {
-      readout.hidden = disabled;
+    if (control) {
+      control.hidden = disabled;
     }
     document.documentElement.classList.toggle('elastic-field-disabled', disabled);
     if (disabled) {
@@ -118,6 +121,60 @@
 
   function clamp(value, minimum, maximum) {
     return Math.max(minimum, Math.min(maximum, value));
+  }
+
+  function restoreModulusPosition() {
+    if (!modulusSlider) {
+      return;
+    }
+
+    try {
+      var savedPosition = parseFloat(
+        window.localStorage.getItem('elastic-field-modulus-position')
+      );
+      if (isFinite(savedPosition)) {
+        modulusSlider.value = clamp(savedPosition, 0, 100);
+      }
+    } catch (error) {
+      // Storage can be unavailable in strict privacy modes.
+    }
+  }
+
+  function updateMaterial(persist) {
+    if (!modulusSlider) {
+      waveStiffness = 0.085;
+      return;
+    }
+
+    var position = parseFloat(modulusSlider.value);
+    if (!isFinite(position)) {
+      position = 50;
+    }
+    position = clamp(position, 0, 100);
+
+    var normalizedPosition = position / 100;
+    var modulusRatio = Math.pow(2, 3 * (normalizedPosition - 0.5));
+    waveStiffness = 0.085 * modulusRatio;
+
+    modulusSlider.value = position;
+    modulusSlider.setAttribute(
+      'aria-valuetext',
+      modulusRatio.toFixed(2) + ' times the reference modulus'
+    );
+    if (modulusOutput) {
+      modulusOutput.textContent = 'E/E₀ ' + modulusRatio.toFixed(2) + '×';
+    }
+    if (control) {
+      control.style.setProperty('--modulus-position', normalizedPosition.toFixed(3));
+    }
+
+    if (persist) {
+      try {
+        window.localStorage.setItem('elastic-field-modulus-position', position);
+      } catch (error) {
+        // The control still works when persistence is unavailable.
+      }
+    }
   }
 
   function applyDipole(x, y, directionX, directionY, amplitude) {
@@ -175,7 +232,9 @@
         var damping = edgeDistance < 4
           ? 0.9 + (edgeDistance / 4) * (0.982 - 0.9)
           : 0.982;
-        var nextV = (velocity[index] + 0.085 * laplacian - 0.001 * current) * damping;
+        var nextV = (
+          velocity[index] + waveStiffness * laplacian - 0.001 * current
+        ) * damping;
         var nextU = current + nextV;
 
         nextV = clamp(nextV, -0.25, 0.25);
@@ -276,7 +335,7 @@
   }
 
   function updateReadout(maximumDisplacement, force) {
-    if (!readout) {
+    if (!control) {
       return;
     }
 
@@ -286,10 +345,10 @@
     }
 
     lastReadoutTime = now;
-    var energy = clamp(maximumDisplacement / 0.1, 0, 1);
-    readout.style.setProperty('--field-energy', energy.toFixed(3));
-    if (readoutValue) {
-      readoutValue.textContent = 'ε ' + energy.toFixed(2);
+    var response = clamp(maximumDisplacement / 0.1, 0, 1);
+    control.style.setProperty('--field-response', response.toFixed(3));
+    if (responseValue) {
+      responseValue.textContent = '|u|* ' + response.toFixed(2);
     }
   }
 
@@ -361,6 +420,11 @@
   }
 
   function handlePointerMove(event) {
+    if (control && control.contains(event.target)) {
+      lastPointer = null;
+      return;
+    }
+
     if (shouldDisable() || (event.pointerType && event.pointerType === 'touch')) {
       return;
     }
@@ -379,7 +443,6 @@
           directionY: movementY / distance,
           amplitude: 0.035 + Math.min(distance / 40, 1) * 0.045
         };
-        document.body.classList.add('field-engaged');
         start();
       }
     }
@@ -424,5 +487,12 @@
     finePointer.addListener(configure);
   }
 
+  restoreModulusPosition();
+  updateMaterial(false);
+  if (modulusSlider) {
+    modulusSlider.addEventListener('input', function() {
+      updateMaterial(true);
+    });
+  }
   configure();
 })();

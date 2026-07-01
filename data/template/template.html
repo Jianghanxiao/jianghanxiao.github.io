@@ -11,17 +11,29 @@
   [!!TODO] site_title
 
   <link rel="stylesheet" href="/styles/twitter-bootstrap.css" />
-  <link rel="stylesheet" href="/styles/style.css" />
+  <link rel="stylesheet" href="/styles/style.css?v=e-modulus-1" />
 </head>
 
 [!!TODO] body_open
   <canvas id="elastic-field" class="elastic-field" role="presentation" aria-hidden="true"></canvas>
-  <div class="field-readout" aria-hidden="true">
-    <span class="field-readout__label">Elastic field</span>
-    <span class="field-readout__hint">move / apply force</span>
-    <span class="field-readout__meter"><i></i></span>
-    <span class="field-readout__value">ε 0.00</span>
-  </div>
+  <aside class="field-control" aria-label="Elastic field controls">
+    <span class="field-control__title">Elastic field</span>
+    <label class="field-control__label" for="elastic-modulus">
+      <span>Young's modulus</span>
+      <output id="elastic-modulus-output" for="elastic-modulus">E/E₀ 1.00×</output>
+    </label>
+    <input id="elastic-modulus" class="field-control__slider" type="range"
+      min="0" max="100" step="1" value="50" aria-describedby="elastic-modulus-scale" />
+    <div id="elastic-modulus-scale" class="field-control__scale">
+      <span>soft</span>
+      <span>stiff</span>
+    </div>
+    <div class="field-control__response" aria-hidden="true">
+      <span class="field-control__response-label">response</span>
+      <span class="field-control__meter"><i></i></span>
+      <span class="field-control__value">|u|* 0.00</span>
+    </div>
+  </aside>
 
   <a class="skip-link" href="#main-content">Skip to content</a>
 
@@ -97,7 +109,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
   <script src="/scripts/bootstrap.min.js"></script>
   <script src="/scripts/script.js"></script>
-  <script src="/scripts/elastic-field.js"></script>
+  <script src="/scripts/elastic-field.js?v=e-modulus-1"></script>
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-162763877-1"></script>
