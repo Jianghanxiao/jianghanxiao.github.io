@@ -1,5 +1,33 @@
 [
     {
+        "name": "Deform360: A Massive Multi-view Visuotactile Dataset for Deformable World Models",
+        "image": "files/deform360.gif",
+        "authors": [
+            "Hongyu Li*",
+            "Wanjia Fu*",
+            "Xiaoyan Cong",
+            "Zekun Li",
+            "Binghao Huang",
+            "Hanxiao Jiang",
+            "Xintong He",
+            "Yiqing Liang",
+            "Rao Fu",
+            "Tao Lu",
+            "Srinath Sridhar",
+            "Kevin A. Smith",
+            "George Konidaris",
+            "Yunzhu Li"
+        ],
+        "conference": "ECCV 2026",
+        "special": "",
+        "description": "",
+        "paper": "https://arxiv.org/abs/2607.05390",
+        "project": "https://deform360.lhy.xyz/",
+        "code": "https://github.com/lhy0807/deform360",
+        "github_star": "lhy0807/deform360",
+        "extra": ""
+    },
+    {
         "name": "Real-to-Sim Robot Policy Evaluation with Gaussian Splatting Simulation of Soft-Body Interactions",
         "image": "files/phystwin-eval.gif",
         "authors": [
