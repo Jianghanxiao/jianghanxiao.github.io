@@ -1,5 +1,24 @@
 [
     {
+        "name": "Boba: Batched Simulation for Physics-Based Gaussian Digital Twins",
+        "image": "files/boba.gif",
+        "authors": [
+            "Yihan Pang",
+            "Hanxiao Jiang",
+            "Sushant Kondguli",
+            "Sarita Adve",
+            "Shenlong Wang"
+        ],
+        "conference": "ECCV 2026",
+        "special": "",
+        "description": "",
+        "paper": "https://jianxiapyh.github.io/Boba-project-page/assets/Boba_ECCV.pdf",
+        "project": "https://jianxiapyh.github.io/Boba-project-page/",
+        "code": "https://github.com/jianxiapyh/Boba-Public",
+        "github_star": "jianxiapyh/Boba-Public",
+        "extra": ""
+    },
+    {
         "name": "Deform360: A Massive Multi-view Visuotactile Dataset for Deformable World Models",
         "image": "files/deform360.gif",
         "authors": [
