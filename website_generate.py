@@ -196,10 +196,20 @@ def parsePubs(segments):
         info = {}
         publication_name = escape(pub["name"])
         image_path = escape(pub["image"], quote=True)
-        info["image"] = [
-            f'<img src="{image_path}" alt="{publication_name} project preview" '
-            'class="publication-image" width="600" height="360" loading="lazy" decoding="async" />'
-        ]
+        if pub.get("video"):
+            video_path = escape(pub["video"], quote=True)
+            info["image"] = [
+                f'<video class="publication-image" width="600" height="360" '
+                f'poster="{image_path}" aria-label="{publication_name} project preview" '
+                'autoplay muted loop playsinline preload="none">',
+                f'  <source src="{video_path}" type="video/mp4" />',
+                '</video>',
+            ]
+        else:
+            info["image"] = [
+                f'<img src="{image_path}" alt="{publication_name} project preview" '
+                'class="publication-image" width="600" height="360" loading="lazy" decoding="async" />'
+            ]
 
         content = [f'<h3 class="publication-title">{publication_name}</h3>']
 
@@ -267,7 +277,20 @@ def parsePubs(segments):
 def generateIndexHTML(segments):
     preparePage(segments, "home")
     segments["body_1"] = parseNews(segments["_news"], short=True, limit=5)
-    segments["body_2"] = parsePubs(segments)
+    segments["body_2"] = [
+        '<section class="highlights-section" aria-labelledby="highlights-title">',
+        '  <header class="section-heading">',
+        '    <span class="section-index" aria-hidden="true">Featured /</span>',
+        '    <h2 id="highlights-title">Recent Highlights</h2>',
+        '  </header>',
+        '  <p>Recent highlights from our ongoing development of the PhysTwin framework.</p>',
+        '  <video class="highlights-video" poster="files/phystwin-highlights-poster.jpg" '
+        'aria-label="Boba, PhysTwin, and Real-to-Sim research highlights" '
+        'autoplay muted loop playsinline controls preload="none">',
+        '    <source src="files/phystwin-highlights.mp4" type="video/mp4" />',
+        '  </video>',
+        '</section>',
+    ] + parsePubs(segments)
     generateHTML(segments["_template"], segments, True, "./index.html")
 
 

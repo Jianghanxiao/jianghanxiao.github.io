@@ -1004,6 +1004,27 @@ body:not(.page-home) .hero-orbit-two {
   margin-top: 34px;
 }
 
+.highlights-section {
+  margin-bottom: 26px;
+  padding: 36px 48px 42px;
+  background: rgba(255, 253, 248, 0.96);
+  border: 1px solid var(--line);
+  border-radius: 28px;
+  box-shadow: var(--shadow-small);
+}
+
+.highlights-section p {
+  margin: 14px 0 22px;
+}
+
+.highlights-video {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  background: #101214;
+  border-radius: 16px;
+}
+
 .publications-section {
   padding: 44px 48px 28px;
   background: rgba(255, 253, 248, 0.96);
@@ -1572,6 +1593,7 @@ body:not(.page-home) .hero-orbit-two {
   }
 
   .page-home .news-block,
+  .highlights-section,
   .publications-section,
   .page-news .main-content > .news-block,
   .page-experience .main-content,

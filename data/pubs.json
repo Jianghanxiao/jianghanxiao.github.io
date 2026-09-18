@@ -1,7 +1,8 @@
 [
     {
         "name": "Boba: Batched Simulation for Physics-Based Gaussian Digital Twins",
-        "image": "files/boba.gif",
+        "image": "files/boba-poster.jpg",
+        "video": "files/boba-loop.mp4",
         "authors": [
             "Yihan Pang",
             "Hanxiao Jiang",
